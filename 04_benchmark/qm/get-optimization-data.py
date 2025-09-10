@@ -1,27 +1,7 @@
-"""
-Extract optimization data from a QCSubmit OptimizationResultCollection
-and save it as a Parquet dataset for benchmarking. The output file is saved
-with the same name as the input file, but with a .parquet extension,
-in the specified output directory.
-
-The script also writes an intermediate pickle file to speed up re-runs.
-
-\b
-Data is saved with the following schema:
-- qcarchive_id (int): The QCArchive optimization ID.
-- cmiles (str): The CMILES string for the molecule.
-- mapped_smiles (str): The mapped SMILES string for the molecule.
-- coordinates (List[float]): The flattened list of coordinates for the conformation in angstrom.
-- energy (float): The energy of the conformation in kcal/mol.
-- method (str): The method or forcefield used to generate the data, i.e., "qm".
-- dataset (str): The name of the dataset, derived from the input file name
-"""
-
 import pathlib
 import pickle
 import click
 import tqdm
-from loguru import logger
 
 import pyarrow as pa
 import pyarrow.parquet as pq
@@ -59,7 +39,6 @@ def main(
     output_directory = pathlib.Path(output_directory) / "qm"
     output_directory.mkdir(parents=True, exist_ok=True)
 
-    # look for existing data to avoid duplicates
     existing_dataset = ds.dataset(output_directory)
     existing_qcarchive_ids = []
     n_files = 0
@@ -78,9 +57,8 @@ def main(
         for record in collection.entries[QCFRACTAL_URL]
     }
 
-    # check if pickle file already exists and reload
     if pathlib.Path(pickle_file).exists() and not force:
-        logger.info(f"Loading records and molecules from {pickle_file}")
+        print(f"Loading records and molecules from {pickle_file}")
         with open(pickle_file, "rb") as f:
             records_and_molecules = pickle.load(f)
     else:
@@ -92,7 +70,6 @@ def main(
         with open(pickle_file, "wb") as f:
             pickle.dump(records_and_molecules, f)
     
-    # create new dataset
     entries = []
     for record, molecule in tqdm.tqdm(records_and_molecules):
         if record.id in existing_qcarchive_ids:
@@ -113,7 +90,7 @@ def main(
     table = pa.Table.from_pylist(entries)
     table_file = output_directory / f"{input_file_name}.parquet"
     pq.write_table(table, table_file)
-    logger.info(f"Wrote {len(entries)} entries to {table_file}")
+    print(f"Wrote {len(entries)} entries to {table_file}")
 
 
 if __name__ == "__main__":

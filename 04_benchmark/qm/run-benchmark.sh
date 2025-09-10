@@ -74,7 +74,7 @@ python get-rmsds-and-tfds.py                                    \
     -ff      $FORCEFIELD > logs/get-rmsds-and-tfds-${FFNAME}.log
 
 # get all to all RMSD matrix for ddEs
-python get-all-to-all-rmsd.py                                   \
+python get-all-to-all-rmsds-and-tfds.py                         \
         --n-workers                     300                     \
         --worker-type                   "slurm"                 \
         --batch-size                    200                     \

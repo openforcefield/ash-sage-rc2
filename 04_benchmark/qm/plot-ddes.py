@@ -1,7 +1,6 @@
 """
 Plot ddE data from QM benchmark, using all-to-all RMSD data.
 
-\b
 This script saves four plots:
 - dde.png: A plot of ddE values for each force field, limited to 12 kcal/mol.
 - dde-close.png: A close-up of the ddE plot, limited to 5 kcal/mol.
@@ -46,24 +45,6 @@ def plot_ecdf(
     xlabel: str = r"|ddE| ($\mathrm{kcal \, mol^{-1}}$)",
     imgfile: pathlib.Path = None,
 ):
-    """
-    Plot an ECDF of ddE values.
-    This is a side-effecting function that saves the plot to a file.
-
-    Parameters
-    ----------
-    data : pd.DataFrame
-        The data to plot. Must contain columns "|ddE|", "Force field", and "method".
-    palette : dict
-        A dictionary mapping force field names to colors.
-    xmax : float, optional
-        The maximum x value to plot, by default 1.
-    xlabel : str, optional
-        The label for the x axis, by default r"|ddE| ($\mathrm{kcal \, mol^{-1}}$)".
-    imgfile : pathlib.Path, optional
-        The file to save the plot to.
-    """
-
     fig, ax = plt.subplots(figsize=(8, 6))
     rmsd_ax = sns.ecdfplot(
         ax=ax,
@@ -81,7 +62,7 @@ def plot_ecdf(
     plt.close()
 
 
-@click.command(help=__doc__)
+@click.command()
 @click.option(
     "--ff-name-and-stem",
     "-ff",
@@ -144,6 +125,7 @@ def main(
 
 
     # count loaded FFs
+    # unique_ffs = list(df["Force field"].unique())
     n_unique_ffs = len(unique_ffs)
     logger.info(f"Found {n_unique_ffs} unique force fields in input {input_directory}")
 

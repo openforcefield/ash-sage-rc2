@@ -1,7 +1,6 @@
 """
 Plot RMSD and TFD data from QM benchmark.
 
-\b
 This script saves six plots:
 - rmsd.png: A plot of heavy atom RMSD values for each force field, limited to 1.0 Å.
 - rmsd-close.png: A close-up of the RMSD plot, limited to 0.4 Å.
@@ -13,6 +12,7 @@ This script saves six plots:
 
 import functools
 import pathlib
+import logging
 import click
 import time
 
@@ -27,7 +27,12 @@ from openff.toolkit import Molecule
 
 import seaborn as sns
 from matplotlib import pyplot as plt
-from loguru import logger
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+)
 
 
 @functools.cache
@@ -44,26 +49,6 @@ def plot_ecdf(
     xlabel: str = r"Heavy atom RMSD ($\AA$)",
     imgfile: pathlib.Path = None,
 ):
-    """
-    Plot an ECDF of RMSD or TFD values.
-    This is a side-effecting function that saves the plot to a file.
-
-    Parameters
-    ----------
-    data : pd.DataFrame
-        The data to plot. Must contain columns "rmsd" or "tfd",
-        "Force field", and "method".
-    x : str
-        The column to plot ("rmsd" or "tfd").
-    palette : dict
-        A dictionary mapping force field names to colors.
-    xmax : float, optional
-        The maximum x value to plot, by default 1.
-    xlabel : str, optional
-        The label for the x axis, by default r"Heavy atom RMSD ($\AA$)".
-    imgfile : pathlib.Path, optional
-        The file to save the plot to.
-    """
     fig, ax = plt.subplots(figsize=(8, 6))
     rmsd_ax = sns.ecdfplot(
         ax=ax,
@@ -81,7 +66,7 @@ def plot_ecdf(
     plt.close()
 
 
-@click.command(help=__doc__)
+@click.command()
 @click.option(
     "--ff-name-and-stem",
     "-ff",
@@ -111,10 +96,27 @@ def plot_ecdf(
     default="images",
     help="Directory to write output files to.",
 )
+@click.option(
+    "--suffix",
+    "-s",
+    "suffix",
+    type=str,
+    default="",
+    help="Suffix to append to output file names.",
+)
+@click.option(
+    "--qca-id-col",
+    "qcarchive_id_col",
+    type=str,
+    default="qcarchive_id",
+    help="Column to use as QCArchive ID index",
+)
 def main(
     ff_name_and_stems: list[tuple[str, str]],
     input_directory: str = "rmsd",
     output_directory: str = "images",
+    suffix: str = "",
+    qcarchive_id_col: str = "qcarchive_id",
 ):
 
     logger.info(f"{time.ctime()} - Starting metrics")
@@ -129,7 +131,7 @@ def main(
         pc.field("method").isin(FF_STEM_TO_NAME.keys())
     )
     rmsd_df = rmsd_dataset.to_table(
-        columns=["qcarchive_id", "rmsd", "tfd", "method"]
+        columns=[qcarchive_id_col, "rmsd", "tfd", "method"]
     ).to_pandas()
     logger.info(f"Loaded {len(rmsd_df)} RMSD/TFD records from {input_directory}")
 
@@ -139,10 +141,10 @@ def main(
     logger.info(f"Found {n_unique_ffs} unique force fields in input {input_directory}")
 
     # filter to only include data points present in all force fields
-    counts = rmsd_df.groupby("qcarchive_id")["method"].nunique()
+    counts = rmsd_df.groupby(qcarchive_id_col)["method"].nunique()
     qcarchive_ids = counts[counts == n_unique_ffs].index
     logger.info(f"Found {len(qcarchive_ids)} QCArchive IDs with data in all force fields")
-    rmsd_df = rmsd_df[rmsd_df["qcarchive_id"].isin(qcarchive_ids)]
+    rmsd_df = rmsd_df[rmsd_df[qcarchive_id_col].isin(qcarchive_ids)]
     rmsd_df["Force field"] = rmsd_df["method"].map(FF_STEM_TO_NAME)
 
     # set up color palette for plotting
@@ -156,7 +158,7 @@ def main(
     output_directory.mkdir(parents=True, exist_ok=True)
 
     # plot rmsd, close up, and boxplot
-    for xmax, filename in [(1, "rmsd.png"), (0.4, "rmsd-close.png")]:
+    for xmax, filename in [(1, f"rmsd{suffix}.png"), (0.4, f"rmsd-close{suffix}.png")]:
         plot_ecdf(
             data=rmsd_df,
             x="rmsd",
@@ -166,14 +168,14 @@ def main(
             imgfile=output_directory / filename,
         )
     ax = sns.boxplot(data=rmsd_df, x="method", hue="Force field", palette=PALETTE, y="rmsd")
-    imgfile = output_directory / "rmsd-box.png"
+    imgfile = output_directory / f"rmsd-box{suffix}.png"
     plt.savefig(imgfile, dpi=300)
     logger.info(f"Saved RMSD box plot to {imgfile}")
     plt.close()
 
     # plot tfd, close-up, and boxplot
 
-    for xmax, filename in [(0.4, "tfd.png"), (0.1, "tfd-close.png")]:
+    for xmax, filename in [(0.4, f"tfd{suffix}.png"), (0.1, f"tfd-close{suffix}.png")]:
         plot_ecdf(
             data=rmsd_df,
             x="tfd",
@@ -183,7 +185,7 @@ def main(
             imgfile=output_directory / filename,
         )
     ax = sns.boxplot(data=rmsd_df, x="method", hue="Force field", palette=PALETTE, y="tfd")
-    imgfile = output_directory / "tfd-box.png"
+    imgfile = output_directory / f"tfd-box{suffix}.png"
     plt.savefig(imgfile, dpi=300)
     logger.info(f"Saved TFD box plot to {imgfile}")
     plt.close()

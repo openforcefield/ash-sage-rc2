@@ -1,35 +1,28 @@
-"""
-Get ddE values from all-to-all RMSD data.
 
-This script reads all-to-all RMSD data from a specified input directory,
-filters the data based on a given RMSD threshold, and calculates ddE values
-for each force field. The results are saved in a specified output directory,
-where each force field has its own Parquet file containing the ddE values.
-Force fields to include and their user-friendly names are provided as input arguments.
-
-Output data follows the following schema:
-- inchi (str): The InChI string of the molecule.
-- ff_qcarchive_id (int): The QCArchive ID of the force field conformer
-- qm_qcarchive_id (int): The QCArchive ID of the QM conformer.
-- ddE (float): The ddE value (kcal/mol).
-- ff_de (float): The force field energy difference (kcal/mol).
-- qm_de (float): The QM energy difference (kcal/mol).
-- method (str): The name of the force field.
-- Force field (str): The user-friendly name of the force field.
-- n_conformers (int): The number of conformers for the molecule.
-"""
 
 import pathlib
 import sys
+import typing
 import click
+import tqdm
+import time
 
 from loguru import logger
+from click_option_group import optgroup
 
+import numpy as np
 import pandas as pd
 import pyarrow as pa
 import pyarrow.compute as pc
 import pyarrow.dataset as ds
 import pyarrow.parquet as pq
+
+import openmm
+import openmm.app
+import openmm.unit
+from openff.units import unit
+from openff.toolkit import Molecule, ForceField
+
 
 logger.remove()
 logger.add(sys.stdout)
@@ -117,7 +110,7 @@ def get_ddEs(
     multiple=True,
     help=(
         "Force fields to include and their stem names. "
-        "The first argument should be the name of the force field in the plot (e.g. 'Sage 2.2.1'), "
+        "The first argument should be the name of the force field in the plot, "
         "the second argument should be the stem name of the force field (e.g., 'openff_unconstrained-2.2.1'). "
         "This option can be specified multiple times to include multiple force fields."
     )

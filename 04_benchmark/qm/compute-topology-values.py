@@ -1,19 +1,3 @@
-"""
-Compute topology values (bonds, angles, dihedrals, impropers) for molecules
-in a dataset and save the results in a subdirectory named after the method used.
-This is used later to compare topology values between force fields and QM.
-The output files are saved in Parquet format for efficient storage and retrieval.
-Data is batch-processed with Dask and is written to work on a SLURM cluster.
-\b
-The format of the output files is:
-- `qcarchive_id` (str): The ID of the molecule in the QCArchive.
-- `mapped_smiles` (str): The mapped SMILES of the molecule.
-- `method` (str): The method used to generate the coordinates.
-- `topology` (str): The type of topology value (Bonds, Angles, ProperTorsions, ImproperTorsions).
-- `atom_indices` (list[int]): The indices of the atoms involved in the topology value.
-- `value` (float): The value of the topology (in Angstroms for bonds, degrees for angles and dihedrals
-"""
-
 import pathlib
 import typing
 import click
@@ -44,18 +28,8 @@ MDA_TO_OPENFF = {
 }
 
 def compute_single(
-    row: dict,
+    row,
 ):
-    """
-    Compute topology values for a single molecule.
-
-    Parameters
-    ----------
-    row : dict
-        A dictionary containing the keys "qcarchive_id", "mapped_smiles", "coordinates", and "method".
-    """
-
-
     from openff.units import unit
     mol = Molecule.from_mapped_smiles(
         row["mapped_smiles"],
@@ -70,7 +44,6 @@ def compute_single(
         "method": row["method"]
     }
 
-    # use MDA routines for htis
     u = mda.Universe(mol.to_rdkit(), to_guess=["angles", "dihedrals", "impropers"])
     topology_groups = ["bonds", "angles", "dihedrals", "impropers"]
 
@@ -107,22 +80,7 @@ def compute_single(
 def batch_optimize(
     qcarchive_ids: list[str],
     data_directory: str,
-) -> list[dict]:
-    """
-    Compute topology values for a batch of molecules.
-    
-    Parameters
-    ----------
-    qcarchive_ids : list[str]
-        A list of QCArchive IDs to process.
-    data_directory : str
-        The directory containing the input data files.
-
-    Returns
-    -------
-    list[dict]
-        A list of dictionaries containing the computed topology values.
-    """
+):
     dataset = ds.dataset(data_directory)
     subset = dataset.filter(
         pc.field("qcarchive_id").isin(qcarchive_ids)
@@ -138,7 +96,7 @@ def batch_optimize(
 
 
 
-@click.command(help=__doc__)
+@click.command()
 @click.option(
     "--input-directory",
     "-i",
@@ -236,7 +194,6 @@ def main(
     ).to_pydict()["qcarchive_id"]
     input_qcarchive_ids = set(input_qcarchive_ids)
 
-    # look for existing output files and skip those
     output_directory = pathlib.Path(output_directory)
     output_directory.mkdir(parents=True, exist_ok=True)
     output_dataset = ds.dataset(output_directory)

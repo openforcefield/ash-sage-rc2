@@ -16,9 +16,12 @@ conda activate nagl-valence
 DATA_DIR="../../03_fit-valence/02_curate-data/output"
 
 
-python get-optimization-data.py -i $DATA_DIR/optimizations-validation.json -o data/optimization
+#python get-optimization-data.py -i $DATA_DIR/optimizations-validation.json -o data/optimization
 
-python get-torsiondrive-data.py -i $DATA_DIR/torsiondrives-validation.json -o data/torsiondrive
 
-python download-industry-set.py -o data/optimization
+#python get-torsiondrive-data.py -i $DATA_DIR/torsiondrives-validation.json -o data/torsiondrive
+
+#python download-industry-set.py -o data/optimization
+
+python get-torsiondrive-data.py -i input/biaryl-torsions.json -o data/torsiondrive
 

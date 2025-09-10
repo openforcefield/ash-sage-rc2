@@ -7,7 +7,7 @@ It works off a single data directory, assumes the QM data is in a subdirectory c
 and saves the results in a subdirectory named after the force field used for optimization.
 The output files are saved in Parquet format for efficient storage and retrieval.
 Data is batch-processed with Dask and is written to work on a SLURM cluster.
-\b
+
 The format of the output files is:
 - `qcarchive_id` (int): The QCArchive ID of the molecule.
 - `cmiles` (str): The canonical SMILES of the molecule.
@@ -167,7 +167,7 @@ def batch_optimize(
 
 
 
-@click.command(help=__doc__)
+@click.command()
 @click.option(
     "--forcefield",
     "-ff",

@@ -37,3 +37,27 @@ python plot-rmsd-tfd.py \
     -ff 'v1-k100' "fb-fit-v1-single-mean-k100_unconstrained" \
     -ff 'v3-k100' "fb-fit-v3-single-mean-k100_unconstrained" \
     -i rmsd-tfd -o images
+
+python plot-rmsd-tfd.py \
+    -ff 'Parsley 1.3.1' 'openff_unconstrained-1.3.1' \
+    -ff 'Sage 2.0.0' "openff_unconstrained-2.0.0" \
+    -ff 'Sage 2.2.1' "openff_unconstrained-2.2.1" \
+    -ff 'Sage 2.2.1 + AshGC' "openff_unconstrained-2.2.1-ashgc" \
+    -ff 'Sage 2.3.0rc1' "openff_unconstrained-2.3.0rc1" \
+    -ff 'v1-k100' "fb-fit-v1-single-mean-k100_unconstrained" \
+    -ff 'v2-k100' "fb-fit-v2-single-mean-k100_unconstrained" \
+    -ff 'v3-k100' "fb-fit-v3-single-mean-k100_unconstrained" \
+    -i all-to-all-rmsd-tfd -o images -s "-all" --qca-id-col "ff_qcarchive_id"
+
+python plot-base-vs-lowest-rmsd-tfd.py \
+    -ff 'Parsley 1.3.1' 'openff_unconstrained-1.3.1' \
+    -ff 'Sage 2.0.0' "openff_unconstrained-2.0.0" \
+    -ff 'Sage 2.2.1' "openff_unconstrained-2.2.1" \
+    -ff 'Sage 2.2.1 + AshGC' "openff_unconstrained-2.2.1-ashgc" \
+    -ff 'Sage 2.3.0rc1' "openff_unconstrained-2.3.0rc1" \
+    -ff 'v1-k100' "fb-fit-v1-single-mean-k100_unconstrained" \
+    -ff 'v2-k100' "fb-fit-v2-single-mean-k100_unconstrained" \
+    -ff 'v3-k100' "fb-fit-v3-single-mean-k100_unconstrained" \
+    -a all-to-all-rmsd-tfd -s rmsd-tfd \
+    -o images
+
