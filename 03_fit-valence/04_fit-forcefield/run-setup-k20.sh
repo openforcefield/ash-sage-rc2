@@ -16,6 +16,7 @@ hostname
 source ~/.bashrc
 # conda activate nagl-valence # bespokefit requires pydantic 1
 conda activate fb_196_ic_0326
+conda env export > full-setup-env.yaml
 
 ffver="v0"
 ffver="v1"

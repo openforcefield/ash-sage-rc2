@@ -1,7 +1,17 @@
+"""
+This scripts generates the ForceBalance inputs for fitting a force field.
+
+It generates the following files:
+- optimize.in: The main ForceBalance input file.
+- targets/: the training targets for the optimization.
+- forcefield/force-field.offxml: The force field to optimize.
+"""
+
 import os
 import json
 import pathlib
 import typing
+from loguru import logger
 
 import click
 
@@ -15,14 +25,34 @@ from openff.qcsubmit.results import (
 import numpy as np
 import tqdm
 
+# logging.basicConfig(
+#     level=logging.INFO,
+#     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+# )
+# logger = logging.getLogger(__name__)
+
 def filter_for_smarts_or_smiles(
     entry,
     smarts_to_exclude: typing.Optional[typing.List[str]] = None,
     inchi_keys_to_exclude: typing.Optional[typing.List[str]] = None,
-):
+) -> bool:
     """
     Normal filtering with the to_records() call is incredibly slow;
     copy out the actual filtering function to speed it up
+
+    Parameters
+    ----------
+    entry : OptimizationResult or TorsionDriveResult
+        The entry to filter.
+    smarts_to_exclude : list[str], optional
+        A list of SMARTS patterns to exclude from the training set.
+    inchi_keys_to_exclude : list[str], optional
+        A list of InChI keys to exclude from the training set.
+    
+    Returns
+    -------
+    bool
+        True if the entry should be included, False if it should be excluded.
     """
     from openff.toolkit import Molecule
 
@@ -44,6 +74,25 @@ def filter_dataset(
     smarts_to_exclude: typing.Optional[typing.List[str]] = None,
     smiles_to_exclude: typing.Optional[typing.List[str]] = None,
 ):
+    """
+    Filter the dataset to exclude certain SMILES and SMARTS patterns.
+    This is a side-effecting function that modifies the dataset in place.
+
+    Parameters
+    ----------
+    dataset : OptimizationResultCollection or TorsionDriveResultCollection
+        The dataset to filter.
+    smarts_to_exclude : list[str], optional
+        A list of SMARTS patterns to exclude from the training set.
+    smiles_to_exclude : list[str], optional
+        A list of SMILES patterns to exclude from the training set.
+        This is a list of SMILES strings, not patterns.
+    
+    Returns
+    -------
+    None
+        The dataset is modified in place.
+    """
     from openff.toolkit import Molecule
 
     inchi_keys_to_exclude = []
@@ -75,7 +124,23 @@ def load_training_data(
     smiles_to_exclude: typing.Optional[str] = None,
     verbose: bool = False
 ):
-
+    """
+    Load the training data from the given datasets and filter out unwanted entries.
+    Parameters
+    ----------
+    optimization_dataset : str
+        The path to the optimization dataset to use, encoding an OptimizationResultCollection.
+    torsion_dataset : str
+        The path to the torsion dataset to use, encoding a TorsionDriveResultCollection
+    smarts_to_exclude : str, optional
+        The path to a file containing SMARTS patterns to exclude from the training set.
+        The patterns should be separated by new lines.
+    smiles_to_exclude : str, optional
+        The path to a file containing SMILES patterns to exclude from the training set.
+        The patterns should be separated by new lines.
+    verbose : bool, optional
+        Whether to print verbose logging messages.
+    """
     if smarts_to_exclude is not None:
         exclude_smarts = pathlib.Path(smarts_to_exclude).read_text().splitlines()
     else:
@@ -88,7 +153,7 @@ def load_training_data(
 
     torsion_training_set = TorsionDriveResultCollection.parse_file(torsion_dataset)
     if verbose:
-        print(f"Loaded torsion training set with {torsion_training_set.n_results} entries.")
+        logger.info(f"Loaded torsion training set with {torsion_training_set.n_results} entries.")
 
     filter_dataset(
         torsion_training_set,
@@ -97,11 +162,11 @@ def load_training_data(
     )
 
     if verbose:
-        print(f"Filtered torsion training set to {torsion_training_set.n_results} entries.")
+        logger.info(f"Filtered torsion training set to {torsion_training_set.n_results} entries.")
 
     optimization_training_set = OptimizationResultCollection.parse_file(optimization_dataset)
     if verbose:
-        print(f"Loaded optimization training set with {optimization_training_set.n_results} entries.")
+        logger.info(f"Loaded optimization training set with {optimization_training_set.n_results} entries.")
 
     filter_dataset(
         optimization_training_set,
@@ -109,7 +174,7 @@ def load_training_data(
         smiles_to_exclude=exclude_smiles,
     )
     if verbose:
-        print(f"Filtered optimization training set to {optimization_training_set.n_results} entries.")
+        logger.info(f"Filtered optimization training set to {optimization_training_set.n_results} entries.")
 
 
     return torsion_training_set, optimization_training_set
@@ -144,13 +209,19 @@ def load_training_data(
     "--valence-counts",
     type=click.Path(exists=True, dir_okay=False, file_okay=True),
     required=True,
-    help="The path to the valence counts file. (JSON)",
+    help=(
+        "The path to the valence counts file. (JSON)"
+        "This is used to determine which valence parameters to train."
+    ),
 )
 @click.option(
     "--torsion-counts",
     type=click.Path(exists=True, dir_okay=False, file_okay=True),
     required=True,
-    help="The path to the torsion counts file. (JSON)",
+    help=(
+        "The path to the torsion counts file. (JSON)"
+        "This is used to determine which torsion parameters to train."
+    ),
 )
 @click.option(
     "--n-min-valence",
@@ -162,9 +233,13 @@ def load_training_data(
 @click.option(
     "--n-min-torsion",
     type=int,
-    default=5,
+    default=1,
     show_default=True,
-    help="The minimum number of torsiondrive records with a parameter to train it.",
+    help=(
+        "The minimum number of torsiondrive records with a parameter to train it. "
+        "Note, this only counts parameter IDs that match the full dihedral, "
+        "not all parameter IDs that run through a torsion central bond."
+    )
 )
 @click.option(
     "--output-directory",
@@ -304,15 +379,19 @@ def generate(
     )
 
     ff = ForceField(forcefield)
-    # just in case
-    ff.get_parameter_handler("ToolkitAM1BCC")
-    ff.deregister_parameter_handler("ToolkitAM1BCC")
-    ff.get_parameter_handler("ChargeIncrementModel", {"version":0.3, "partial_charge_method":"openff-gnn-am1bcc-0.1.0-rc.3.pt"})
 
+    # check correct charge model
+    assert "ToolkitAM1BCC" not in ff._parameter_handlers
+    assert "ChargeIncrementModel" in ff._parameter_handlers
+    charge_handler = ff.get_parameter_handler("ChargeIncrementModel")
+    assert charge_handler.partial_charge_method == "openff-gnn-am1bcc-0.1.0-rc.3.pt"
+    
     # remove constraints
     constraint_handler = ff.get_parameter_handler("Constraints")
-    constraint_handler._parameters.pop(0) # this is the h-bond constraint
+    if len(constraint_handler.parameters) == 3:
+        constraint_handler._parameters.pop(0) # this is the h-bond constraint
 
+    # set up optimizer schema
     optimizer = ForceBalanceSchema(
         max_iterations=max_iterations,
         step_convergence_threshold=0.01,
@@ -329,12 +408,8 @@ def generate(
             "retain_micro_outputs": "0",
         },
     )
-#    schema = TorsionProfileTargetSchema(
-#            energy_denominator=1.0,
-#            energy_cutoff=8.0,
-#            extras={"remote": "1"},
-#        )
 
+    # set up target schema
     targets = [
         TorsionProfileTargetSchema(
             reference_data=torsion_training_set,
@@ -357,9 +432,9 @@ def generate(
     if frozen_angle_file:
         with open(frozen_angle_file, "r") as f:
             linear_angle_smirks = json.load(f)["smirks"]
-    print(f"Frozen angle SMIRKS: {linear_angle_smirks}")
+    logger.info(f"Frozen angle SMIRKS: {linear_angle_smirks}")
         
-
+    # load counts to determine which parameters to train
     with open(valence_counts, "r") as f:
         valence_counts = json.load(f)
     with open(torsion_counts, "r") as f:
@@ -382,7 +457,7 @@ def generate(
                 )
             )
         else:
-            print(
+            logger.info(
                 f"Not training {parameter.id} with SMIRKS {parameter.smirks} "
                 f"because it has {count} records < {n_min_valence}."
             )
@@ -399,7 +474,7 @@ def generate(
                 )
             )
         else:
-            print(
+            logger.info(
                 f"Not training {parameter.id} with SMIRKS {parameter.smirks} "
                 f"because it has {count} records < {n_min_valence}."
             )
@@ -419,7 +494,7 @@ def generate(
                 )
             )
         else:
-            print(
+            logger.info(
                 f"Not training {parameter.id} with SMIRKS {parameter.smirks} "
                 f"because it has {count} records < {n_min_torsion}."
             )
@@ -436,7 +511,7 @@ def generate(
             )
         )
 
-
+    # set up the full optimization schema
     optimization_schema = OptimizationSchema(
         id=tag,
         initial_force_field=os.path.abspath(forcefield),
@@ -458,8 +533,9 @@ def generate(
     output_directory = pathlib.Path(output_directory)
     output_directory.mkdir(parents=True, exist_ok=True)
 
-    optfile = output_directory / f"{optimization_schema.id}.json"
-    with optfile.open("w") as f:
+    # ensure we can re-create this
+    optfile = f"{optimization_schema.id}.json"
+    with open(optfile, "w") as f:
         f.write(optimization_schema.json(indent=2))
     
 
