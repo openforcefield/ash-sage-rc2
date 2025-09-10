@@ -74,10 +74,10 @@ def main(
     all_json_files = pathlib.Path(input_directory).glob("rep*/*/*.json")
 
     reference_dataset = PhysicalPropertyDataSet.from_json(input_dataset)
-    reference_properties_by_id = {
-        prop.id: prop
-        for prop in reference_dataset.properties
-    }
+    # reference_properties_by_id = {
+    #     prop.id: prop
+    #     for prop in reference_dataset.properties
+    # }
 
     all_entries = []
 
@@ -92,10 +92,16 @@ def main(
 
         value = physical_property.value.m
         uncertainty = physical_property.uncertainty.m
-        reference_property = reference_properties_by_id[physical_property.id]
+        index = int(json_file.stem.split("-")[-1])
+
+        # comment out the below -- as property IDs changed between runs
+        # between ash-sage-rc1 vs ash-sage-rc2, this doesn't currently work.
+        # but this is probably best practice moving forward as a secondary check.
+        # reference_property = reference_properties_by_id[physical_property.id]
+        reference_property = reference_dataset.properties[index]
         ref_value = reference_property.value.m
         ref_uncertainty = reference_property.uncertainty.m
-        index = json_file.stem.split("-")[-1]
+        
         ff_name = json_file.parent.name
 
         smiles_1 = physical_property.substance.components[0].smiles
@@ -105,8 +111,8 @@ def main(
             smiles_2 = ""
         
         entry = {
-            "id": physical_property.id,
-            "index": int(index),
+            "id": reference_property.id,
+            "index": index,
             "type": type(physical_property).__name__,
             "substance": repr(physical_property.substance),
             "smiles_1": smiles_1,
@@ -128,20 +134,31 @@ def main(
     logger.info(f"Wrote {len(all_entries)} entries to {csv_file}")
 
     # get mean and sd
-    mean_values = df.groupby("id").mean().reset_index()
-    sd_values = df.groupby("id").std().reset_index()
-    n_replicates = df.groupby("id").count().reset_index()[["id", "value"]]
+    groupby_cols = ["id", "forcefield"]
+    numeric_cols = ["value", "uncertainty", "reference_value", "reference_uncertainty"]
+    string_cols = ["index", "type", "substance", "smiles_1", "smiles_2"]
+    mean_values = df[groupby_cols + numeric_cols].groupby(by=groupby_cols).mean().reset_index()
+    sd_values = df[groupby_cols + numeric_cols].groupby(by=groupby_cols).std().reset_index()
+    n_replicates = df[groupby_cols + ["replicate"]].groupby(by=groupby_cols).count().reset_index()
+    string_values = df[groupby_cols + string_cols].groupby(by=groupby_cols).first().reset_index()
 
     # set 'uncertainty' column of mean_values to sd_values
     assert mean_values["id"].equals(sd_values["id"])
+    assert string_values["id"].equals(mean_values["id"])
     mean_values["uncertainty"] = sd_values["value"]
-    mean_values["n_replicates"] = n_replicates["value"]
-    # drop the replicate column
-    mean_values = mean_values.drop(columns=["replicate"])
+    mean_values["n_replicates"] = n_replicates["replicate"]
+    for col in string_cols:
+        mean_values[col] = string_values[col]
 
     output_file = output_directory / "summary-benchmarks.csv"
     mean_values.to_csv(output_file)
     logger.info(f"Wrote {len(mean_values)} summary entries to {output_file}")
+
+    # break up into density and enthalpies of mixing
+    for type_, subdf in mean_values.groupby("type"):
+        output_file = output_directory / f"summary-benchmarks-{type_}.csv"
+        subdf.to_csv(output_file)
+        logger.info(f"Wrote {len(subdf)} summary entries to {output_file}")
 
 if __name__ == "__main__":
     main()

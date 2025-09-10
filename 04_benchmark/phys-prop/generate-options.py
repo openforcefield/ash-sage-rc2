@@ -50,7 +50,7 @@ def main(
         equilibration_error_tolerances=[potential_energy, density],
         n_uncorrelated_samples=200, # at least 200 samples to calculate observable
         equilibration_max_iterations=5, # max 1 ns equilibration
-        max_iterations=3, # max 6 ns production
+        max_iterations=2, # max 4 ns production
         error_on_failure=False,
 
     )
@@ -59,7 +59,7 @@ def main(
         equilibration_error_tolerances=[potential_energy, density],
         n_uncorrelated_samples=200, # at least 200 samples to calculate observable
         equilibration_max_iterations=5, # max 1 ns equilibration
-        max_iterations=3, # max 6 ns production
+        max_iterations=2, # max 4 ns production
         error_on_failure=False,
     )
 
