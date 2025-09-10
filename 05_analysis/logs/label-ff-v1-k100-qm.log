@@ -1,0 +1,2 @@
+2025-09-09 23:06:54.771 | INFO     | __main__:main:102 - Found 11961 unique smiles to label
+2025-09-09 23:11:51.559 | INFO     | __main__:main:136 - Wrote 1146412 rows to labels/forcefields/v1-k100/qm.parquet

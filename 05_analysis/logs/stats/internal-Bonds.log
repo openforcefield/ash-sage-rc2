@@ -1,0 +1,172 @@
+2025-09-09 22:24:14.394 | INFO     | __main__:main:274 - Loaded dataset with 98317485 rows
+2025-09-09 22:24:56.131 | INFO     | __main__:main:279 - Found 84 groups to compute
+2025-09-09 22:24:56.592 | INFO     | __main__:main:293 - Filtered to 44684461 records with specified force fields
+2025-09-09 22:24:59.803 | INFO     | __main__:main:301 - Group Bonds: found 20622859 entries
+2025-09-09 22:25:07.458 | INFO     | __main__:main:308 - Group Bonds: filtered to 20483260 records with all 5 force fields present
+2025-09-10 00:05:41.840 | INFO     | __main__:main:301 - Group Bonds-b1: found 1540467 entries
+2025-09-10 00:05:42.146 | INFO     | __main__:main:308 - Group Bonds-b1: filtered to 1518570 records with all 5 force fields present
+2025-09-10 00:13:03.170 | INFO     | __main__:main:301 - Group Bonds-b10: found 323732 entries
+2025-09-10 00:13:03.213 | INFO     | __main__:main:308 - Group Bonds-b10: filtered to 322380 records with all 5 force fields present
+2025-09-10 00:14:19.016 | INFO     | __main__:main:301 - Group Bonds-b11: found 150076 entries
+2025-09-10 00:14:19.037 | INFO     | __main__:main:308 - Group Bonds-b11: filtered to 149555 records with all 5 force fields present
+2025-09-10 00:14:56.096 | INFO     | __main__:main:301 - Group Bonds-b12: found 554206 entries
+2025-09-10 00:14:56.166 | INFO     | __main__:main:308 - Group Bonds-b12: filtered to 553310 records with all 5 force fields present
+2025-09-10 00:17:10.206 | INFO     | __main__:main:301 - Group Bonds-b13: found 284991 entries
+2025-09-10 00:17:10.241 | INFO     | __main__:main:308 - Group Bonds-b13: filtered to 284315 records with all 5 force fields present
+2025-09-10 00:18:19.283 | INFO     | __main__:main:301 - Group Bonds-b13a: found 1770 entries
+2025-09-10 00:18:19.286 | INFO     | __main__:main:308 - Group Bonds-b13a: filtered to 1770 records with all 5 force fields present
+2025-09-10 00:18:21.872 | INFO     | __main__:main:301 - Group Bonds-b14: found 686018 entries
+2025-09-10 00:18:21.955 | INFO     | __main__:main:308 - Group Bonds-b14: filtered to 675765 records with all 5 force fields present
+2025-09-10 00:21:33.986 | INFO     | __main__:main:301 - Group Bonds-b15: found 16568 entries
+2025-09-10 00:21:33.992 | INFO     | __main__:main:308 - Group Bonds-b15: filtered to 16560 records with all 5 force fields present
+2025-09-10 00:21:40.037 | INFO     | __main__:main:301 - Group Bonds-b16: found 279922 entries
+2025-09-10 00:21:40.070 | INFO     | __main__:main:308 - Group Bonds-b16: filtered to 275360 records with all 5 force fields present
+2025-09-10 00:22:47.998 | INFO     | __main__:main:301 - Group Bonds-b17: found 314886 entries
+2025-09-10 00:22:48.039 | INFO     | __main__:main:308 - Group Bonds-b17: filtered to 312305 records with all 5 force fields present
+2025-09-10 00:24:01.950 | INFO     | __main__:main:301 - Group Bonds-b18: found 61055 entries
+2025-09-10 00:24:01.961 | INFO     | __main__:main:308 - Group Bonds-b18: filtered to 60435 records with all 5 force fields present
+2025-09-10 00:24:19.232 | INFO     | __main__:main:301 - Group Bonds-b19: found 152694 entries
+2025-09-10 00:24:19.252 | INFO     | __main__:main:308 - Group Bonds-b19: filtered to 152155 records with all 5 force fields present
+2025-09-10 00:24:56.243 | INFO     | __main__:main:301 - Group Bonds-b2: found 711797 entries
+2025-09-10 00:24:56.331 | INFO     | __main__:main:308 - Group Bonds-b2: filtered to 705885 records with all 5 force fields present
+2025-09-10 00:28:16.136 | INFO     | __main__:main:301 - Group Bonds-b20: found 42109 entries
+2025-09-10 00:28:16.144 | INFO     | __main__:main:308 - Group Bonds-b20: filtered to 41155 records with all 5 force fields present
+2025-09-10 00:28:30.169 | INFO     | __main__:main:301 - Group Bonds-b21: found 386377 entries
+2025-09-10 00:28:30.216 | INFO     | __main__:main:308 - Group Bonds-b21: filtered to 383375 records with all 5 force fields present
+2025-09-10 00:30:15.212 | INFO     | __main__:main:301 - Group Bonds-b22: found 23706 entries
+2025-09-10 00:30:15.217 | INFO     | __main__:main:308 - Group Bonds-b22: filtered to 23690 records with all 5 force fields present
+2025-09-10 00:30:23.992 | INFO     | __main__:main:301 - Group Bonds-b23: found 1850 entries
+2025-09-10 00:30:23.994 | INFO     | __main__:main:308 - Group Bonds-b23: filtered to 1610 records with all 5 force fields present
+2025-09-10 00:30:26.492 | INFO     | __main__:main:301 - Group Bonds-b24: found 38797 entries
+2025-09-10 00:30:26.498 | INFO     | __main__:main:308 - Group Bonds-b24: filtered to 38065 records with all 5 force fields present
+2025-09-10 00:30:37.563 | INFO     | __main__:main:301 - Group Bonds-b25: found 10475 entries
+2025-09-10 00:30:37.565 | INFO     | __main__:main:308 - Group Bonds-b25: filtered to 9955 records with all 5 force fields present
+2025-09-10 00:30:41.884 | INFO     | __main__:main:301 - Group Bonds-b26: found 780 entries
+2025-09-10 00:30:41.885 | INFO     | __main__:main:308 - Group Bonds-b26: filtered to 780 records with all 5 force fields present
+2025-09-10 00:30:44.137 | INFO     | __main__:main:301 - Group Bonds-b27: found 24077 entries
+2025-09-10 00:30:44.141 | INFO     | __main__:main:308 - Group Bonds-b27: filtered to 24025 records with all 5 force fields present
+2025-09-10 00:30:53.084 | INFO     | __main__:main:301 - Group Bonds-b28: found 9600 entries
+2025-09-10 00:30:53.086 | INFO     | __main__:main:308 - Group Bonds-b28: filtered to 9160 records with all 5 force fields present
+2025-09-10 00:30:57.259 | INFO     | __main__:main:301 - Group Bonds-b29: found 160 entries
+2025-09-10 00:30:57.260 | INFO     | __main__:main:308 - Group Bonds-b29: filtered to 160 records with all 5 force fields present
+2025-09-10 00:30:59.328 | INFO     | __main__:main:301 - Group Bonds-b3: found 153592 entries
+2025-09-10 00:30:59.347 | INFO     | __main__:main:308 - Group Bonds-b3: filtered to 151810 records with all 5 force fields present
+2025-09-10 00:31:36.419 | INFO     | __main__:main:301 - Group Bonds-b30: found 890 entries
+2025-09-10 00:31:36.422 | INFO     | __main__:main:308 - Group Bonds-b30: filtered to 890 records with all 5 force fields present
+2025-09-10 00:31:38.712 | INFO     | __main__:main:301 - Group Bonds-b31: found 385 entries
+2025-09-10 00:31:38.713 | INFO     | __main__:main:308 - Group Bonds-b31: filtered to 385 records with all 5 force fields present
+2025-09-10 00:31:40.831 | INFO     | __main__:main:301 - Group Bonds-b32: found 5160 entries
+2025-09-10 00:31:40.833 | INFO     | __main__:main:308 - Group Bonds-b32: filtered to 5160 records with all 5 force fields present
+2025-09-10 00:31:44.378 | INFO     | __main__:main:301 - Group Bonds-b33: found 200 entries
+2025-09-10 00:31:44.379 | INFO     | __main__:main:308 - Group Bonds-b33: filtered to 200 records with all 5 force fields present
+2025-09-10 00:31:46.478 | INFO     | __main__:main:301 - Group Bonds-b34: found 145235 entries
+2025-09-10 00:31:46.497 | INFO     | __main__:main:308 - Group Bonds-b34: filtered to 144945 records with all 5 force fields present
+2025-09-10 00:32:22.229 | INFO     | __main__:main:301 - Group Bonds-b35: found 117242 entries
+2025-09-10 00:32:22.248 | INFO     | __main__:main:308 - Group Bonds-b35: filtered to 117050 records with all 5 force fields present
+2025-09-10 00:32:53.710 | INFO     | __main__:main:301 - Group Bonds-b36: found 14682 entries
+2025-09-10 00:32:53.714 | INFO     | __main__:main:308 - Group Bonds-b36: filtered to 14630 records with all 5 force fields present
+2025-09-10 00:32:59.458 | INFO     | __main__:main:301 - Group Bonds-b37: found 5330 entries
+2025-09-10 00:32:59.460 | INFO     | __main__:main:308 - Group Bonds-b37: filtered to 5330 records with all 5 force fields present
+2025-09-10 00:33:03.028 | INFO     | __main__:main:301 - Group Bonds-b38: found 20761 entries
+2025-09-10 00:33:03.031 | INFO     | __main__:main:308 - Group Bonds-b38: filtered to 20725 records with all 5 force fields present
+2025-09-10 00:33:11.114 | INFO     | __main__:main:301 - Group Bonds-b39: found 345 entries
+2025-09-10 00:33:11.115 | INFO     | __main__:main:308 - Group Bonds-b39: filtered to 345 records with all 5 force fields present
+2025-09-10 00:33:13.324 | INFO     | __main__:main:301 - Group Bonds-b4: found 596274 entries
+2025-09-10 00:33:13.399 | INFO     | __main__:main:308 - Group Bonds-b4: filtered to 593070 records with all 5 force fields present
+2025-09-10 00:35:40.748 | INFO     | __main__:main:301 - Group Bonds-b41: found 19398 entries
+2025-09-10 00:35:40.759 | INFO     | __main__:main:308 - Group Bonds-b41: filtered to 19300 records with all 5 force fields present
+2025-09-10 00:35:47.257 | INFO     | __main__:main:301 - Group Bonds-b42: found 15273 entries
+2025-09-10 00:35:47.261 | INFO     | __main__:main:308 - Group Bonds-b42: filtered to 15075 records with all 5 force fields present
+2025-09-10 00:35:53.033 | INFO     | __main__:main:301 - Group Bonds-b43: found 1407 entries
+2025-09-10 00:35:53.034 | INFO     | __main__:main:308 - Group Bonds-b43: filtered to 1375 records with all 5 force fields present
+2025-09-10 00:35:55.514 | INFO     | __main__:main:301 - Group Bonds-b44: found 233096 entries
+2025-09-10 00:35:55.546 | INFO     | __main__:main:308 - Group Bonds-b44: filtered to 232530 records with all 5 force fields present
+2025-09-10 00:36:55.896 | INFO     | __main__:main:301 - Group Bonds-b45: found 5788 entries
+2025-09-10 00:36:55.899 | INFO     | __main__:main:308 - Group Bonds-b45: filtered to 5695 records with all 5 force fields present
+2025-09-10 00:36:59.583 | INFO     | __main__:main:301 - Group Bonds-b46: found 2955 entries
+2025-09-10 00:36:59.584 | INFO     | __main__:main:308 - Group Bonds-b46: filtered to 2955 records with all 5 force fields present
+2025-09-10 00:37:02.476 | INFO     | __main__:main:301 - Group Bonds-b47: found 200 entries
+2025-09-10 00:37:02.476 | INFO     | __main__:main:308 - Group Bonds-b47: filtered to 200 records with all 5 force fields present
+2025-09-10 00:37:04.591 | INFO     | __main__:main:301 - Group Bonds-b48: found 100 entries
+2025-09-10 00:37:04.592 | INFO     | __main__:main:308 - Group Bonds-b48: filtered to 100 records with all 5 force fields present
+2025-09-10 00:37:07.212 | INFO     | __main__:main:301 - Group Bonds-b5: found 3763515 entries
+2025-09-10 00:37:08.229 | INFO     | __main__:main:308 - Group Bonds-b5: filtered to 3752775 records with all 5 force fields present
+2025-09-10 00:54:37.958 | INFO     | __main__:main:301 - Group Bonds-b51: found 21835 entries
+2025-09-10 00:54:37.975 | INFO     | __main__:main:308 - Group Bonds-b51: filtered to 21715 records with all 5 force fields present
+2025-09-10 00:54:48.703 | INFO     | __main__:main:301 - Group Bonds-b52: found 108048 entries
+2025-09-10 00:54:48.719 | INFO     | __main__:main:308 - Group Bonds-b52: filtered to 107860 records with all 5 force fields present
+2025-09-10 00:55:20.320 | INFO     | __main__:main:301 - Group Bonds-b53: found 5020 entries
+2025-09-10 00:55:20.321 | INFO     | __main__:main:308 - Group Bonds-b53: filtered to 5020 records with all 5 force fields present
+2025-09-10 00:55:23.504 | INFO     | __main__:main:301 - Group Bonds-b54: found 685 entries
+2025-09-10 00:55:23.505 | INFO     | __main__:main:308 - Group Bonds-b54: filtered to 685 records with all 5 force fields present
+2025-09-10 00:55:25.733 | INFO     | __main__:main:301 - Group Bonds-b56: found 103163 entries
+2025-09-10 00:55:25.746 | INFO     | __main__:main:308 - Group Bonds-b56: filtered to 102905 records with all 5 force fields present
+2025-09-10 00:55:56.879 | INFO     | __main__:main:301 - Group Bonds-b57: found 55962 entries
+2025-09-10 00:55:56.888 | INFO     | __main__:main:308 - Group Bonds-b57: filtered to 55850 records with all 5 force fields present
+2025-09-10 00:56:12.915 | INFO     | __main__:main:301 - Group Bonds-b57a: found 7100 entries
+2025-09-10 00:56:12.917 | INFO     | __main__:main:308 - Group Bonds-b57a: filtered to 7100 records with all 5 force fields present
+2025-09-10 00:56:16.729 | INFO     | __main__:main:301 - Group Bonds-b57b: found 65 entries
+2025-09-10 00:56:16.730 | INFO     | __main__:main:308 - Group Bonds-b57b: filtered to 65 records with all 5 force fields present
+2025-09-10 00:56:18.764 | INFO     | __main__:main:301 - Group Bonds-b58: found 5297 entries
+2025-09-10 00:56:18.765 | INFO     | __main__:main:308 - Group Bonds-b58: filtered to 4870 records with all 5 force fields present
+2025-09-10 00:56:21.920 | INFO     | __main__:main:301 - Group Bonds-b59: found 160125 entries
+2025-09-10 00:56:21.939 | INFO     | __main__:main:308 - Group Bonds-b59: filtered to 159235 records with all 5 force fields present
+2025-09-10 00:57:01.418 | INFO     | __main__:main:301 - Group Bonds-b6: found 351835 entries
+2025-09-10 00:57:01.462 | INFO     | __main__:main:308 - Group Bonds-b6: filtered to 348675 records with all 5 force fields present
+2025-09-10 00:58:40.137 | INFO     | __main__:main:301 - Group Bonds-b60: found 3027 entries
+2025-09-10 00:58:40.141 | INFO     | __main__:main:308 - Group Bonds-b60: filtered to 2975 records with all 5 force fields present
+2025-09-10 00:58:42.993 | INFO     | __main__:main:301 - Group Bonds-b61: found 7805 entries
+2025-09-10 00:58:42.994 | INFO     | __main__:main:308 - Group Bonds-b61: filtered to 7805 records with all 5 force fields present
+2025-09-10 00:58:46.925 | INFO     | __main__:main:301 - Group Bonds-b62: found 6534 entries
+2025-09-10 00:58:46.926 | INFO     | __main__:main:308 - Group Bonds-b62: filtered to 6250 records with all 5 force fields present
+2025-09-10 00:58:50.605 | INFO     | __main__:main:301 - Group Bonds-b62a: found 6088 entries
+2025-09-10 00:58:50.607 | INFO     | __main__:main:308 - Group Bonds-b62a: filtered to 5920 records with all 5 force fields present
+2025-09-10 00:58:54.247 | INFO     | __main__:main:301 - Group Bonds-b63: found 128 entries
+2025-09-10 00:58:54.248 | INFO     | __main__:main:308 - Group Bonds-b63: filtered to 120 records with all 5 force fields present
+2025-09-10 00:58:56.287 | INFO     | __main__:main:301 - Group Bonds-b64: found 19772 entries
+2025-09-10 00:58:56.292 | INFO     | __main__:main:308 - Group Bonds-b64: filtered to 19160 records with all 5 force fields present
+2025-09-10 00:59:02.883 | INFO     | __main__:main:301 - Group Bonds-b65: found 11008 entries
+2025-09-10 00:59:02.885 | INFO     | __main__:main:308 - Group Bonds-b65: filtered to 10720 records with all 5 force fields present
+2025-09-10 00:59:08.167 | INFO     | __main__:main:301 - Group Bonds-b66: found 2160 entries
+2025-09-10 00:59:08.169 | INFO     | __main__:main:308 - Group Bonds-b66: filtered to 2040 records with all 5 force fields present
+2025-09-10 00:59:10.698 | INFO     | __main__:main:301 - Group Bonds-b67: found 2825 entries
+2025-09-10 00:59:10.699 | INFO     | __main__:main:308 - Group Bonds-b67: filtered to 2825 records with all 5 force fields present
+2025-09-10 00:59:13.576 | INFO     | __main__:main:301 - Group Bonds-b68: found 263277 entries
+2025-09-10 00:59:13.607 | INFO     | __main__:main:308 - Group Bonds-b68: filtered to 262805 records with all 5 force fields present
+2025-09-10 01:00:19.865 | INFO     | __main__:main:301 - Group Bonds-b69: found 166924 entries
+2025-09-10 01:00:19.889 | INFO     | __main__:main:308 - Group Bonds-b69: filtered to 166600 records with all 5 force fields present
+2025-09-10 01:01:09.486 | INFO     | __main__:main:301 - Group Bonds-b7: found 2094405 entries
+2025-09-10 01:01:09.954 | INFO     | __main__:main:308 - Group Bonds-b7: filtered to 2087420 records with all 5 force fields present
+2025-09-10 01:10:15.301 | INFO     | __main__:main:301 - Group Bonds-b70: found 97916 entries
+2025-09-10 01:10:15.321 | INFO     | __main__:main:308 - Group Bonds-b70: filtered to 97480 records with all 5 force fields present
+2025-09-10 01:10:44.830 | INFO     | __main__:main:301 - Group Bonds-b71: found 4314 entries
+2025-09-10 01:10:44.831 | INFO     | __main__:main:308 - Group Bonds-b71: filtered to 4090 records with all 5 force fields present
+2025-09-10 01:10:47.857 | INFO     | __main__:main:301 - Group Bonds-b72: found 16835 entries
+2025-09-10 01:10:47.859 | INFO     | __main__:main:308 - Group Bonds-b72: filtered to 16835 records with all 5 force fields present
+2025-09-10 01:10:53.818 | INFO     | __main__:main:301 - Group Bonds-b73: found 2795 entries
+2025-09-10 01:10:53.819 | INFO     | __main__:main:308 - Group Bonds-b73: filtered to 2795 records with all 5 force fields present
+2025-09-10 01:10:56.621 | INFO     | __main__:main:301 - Group Bonds-b74: found 470 entries
+2025-09-10 01:10:56.622 | INFO     | __main__:main:308 - Group Bonds-b74: filtered to 470 records with all 5 force fields present
+2025-09-10 01:10:58.740 | INFO     | __main__:main:301 - Group Bonds-b75: found 190 entries
+2025-09-10 01:10:58.741 | INFO     | __main__:main:308 - Group Bonds-b75: filtered to 190 records with all 5 force fields present
+2025-09-10 01:11:00.815 | INFO     | __main__:main:301 - Group Bonds-b76: found 170 entries
+2025-09-10 01:11:00.815 | INFO     | __main__:main:308 - Group Bonds-b76: filtered to 170 records with all 5 force fields present
+2025-09-10 01:11:02.886 | INFO     | __main__:main:301 - Group Bonds-b77: found 70 entries
+2025-09-10 01:11:02.887 | INFO     | __main__:main:308 - Group Bonds-b77: filtered to 70 records with all 5 force fields present
+2025-09-10 01:11:05.032 | INFO     | __main__:main:301 - Group Bonds-b8: found 1050531 entries
+2025-09-10 01:11:05.185 | INFO     | __main__:main:308 - Group Bonds-b8: filtered to 1047275 records with all 5 force fields present
+2025-09-10 01:15:28.268 | INFO     | __main__:main:301 - Group Bonds-b84: found 4946144 entries
+2025-09-10 01:15:29.570 | INFO     | __main__:main:308 - Group Bonds-b84: filtered to 4896020 records with all 5 force fields present
+2025-09-10 01:37:25.201 | INFO     | __main__:main:301 - Group Bonds-b85: found 2814728 entries
+2025-09-10 01:37:25.819 | INFO     | __main__:main:308 - Group Bonds-b85: filtered to 2803750 records with all 5 force fields present
+2025-09-10 01:51:46.815 | INFO     | __main__:main:301 - Group Bonds-b86: found 2890 entries
+2025-09-10 01:51:46.827 | INFO     | __main__:main:308 - Group Bonds-b86: filtered to 2810 records with all 5 force fields present
+2025-09-10 01:51:49.697 | INFO     | __main__:main:301 - Group Bonds-b87: found 548215 entries
+2025-09-10 01:51:49.767 | INFO     | __main__:main:308 - Group Bonds-b87: filtered to 546905 records with all 5 force fields present
+2025-09-10 01:54:00.235 | INFO     | __main__:main:301 - Group Bonds-b88: found 153569 entries
+2025-09-10 01:54:00.257 | INFO     | __main__:main:308 - Group Bonds-b88: filtered to 149425 records with all 5 force fields present
+2025-09-10 01:54:37.086 | INFO     | __main__:main:301 - Group Bonds-b8a: found 6623 entries
+2025-09-10 01:54:37.089 | INFO     | __main__:main:308 - Group Bonds-b8a: filtered to 6555 records with all 5 force fields present
+2025-09-10 01:54:40.841 | INFO     | __main__:main:301 - Group Bonds-b9: found 295113 entries
+2025-09-10 01:54:40.875 | INFO     | __main__:main:308 - Group Bonds-b9: filtered to 293725 records with all 5 force fields present
+2025-09-10 01:55:51.183 | INFO     | __main__:main:329 - Saved combined stats to output/qm/mm-qm-diff/stats/Bonds.csv

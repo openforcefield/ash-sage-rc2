@@ -1,0 +1,159 @@
+2025-09-08 16:10:13.400 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/Sage-2.2.1-+-AmberTools.csv
+2025-09-08 16:10:13.402 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/Sage-2.2.1-+-ELF10.csv
+2025-09-08 16:10:13.403 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/Sage-2.2.1-+-AshGC.csv
+2025-09-08 16:10:13.405 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/Sage-2.3.0rc1.csv
+2025-09-08 16:10:13.406 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/v1-k100.csv
+2025-09-08 16:10:13.408 | INFO     | __main__:main:205 - Read 760 rows from output/sfes/mnsol/stats/v3-k100.csv
+2025-09-08 16:10:13.410 | INFO     | __main__:main:210 - Filtered to 3800 rows with given force fields
+2025-09-08 16:10:13.870 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alcohol.png
+2025-09-08 16:10:14.170 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Aldehyde.png
+2025-09-08 16:10:14.462 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkane.png
+2025-09-08 16:10:14.733 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkene.png
+2025-09-08 16:10:15.008 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkyl Bromide.png
+2025-09-08 16:10:15.322 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkyl Chloride.png
+2025-09-08 16:10:15.598 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkylarylether.png
+2025-09-08 16:10:15.862 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Alkylthiol.png
+2025-09-08 16:10:16.133 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-All.png
+2025-09-08 16:10:16.390 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Amine.png
+2025-09-08 16:10:16.744 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Aromatic.png
+2025-09-08 16:10:17.040 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Aryl Bromide.png
+2025-09-08 16:10:17.502 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Aryl Chloride.png
+2025-09-08 16:10:17.806 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carbonyl.png
+2025-09-08 16:10:18.210 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Amide.png
+2025-09-08 16:10:18.545 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Derivative.png
+2025-09-08 16:10:18.836 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Ester.png
+2025-09-08 16:10:19.162 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Primary Amide.png
+2025-09-08 16:10:19.467 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Secondary Amide.png
+2025-09-08 16:10:19.758 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Carboxylic Acid Tertiary Amide.png
+2025-09-08 16:10:20.138 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Dialkylether.png
+2025-09-08 16:10:20.436 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Ether.png
+2025-09-08 16:10:20.706 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Halogen Derivative.png
+2025-09-08 16:10:21.008 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Heterocycle.png
+2025-09-08 16:10:21.417 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Hydroxy.png
+2025-09-08 16:10:21.720 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Ketone.png
+2025-09-08 16:10:22.006 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Oxohetarene.png
+2025-09-08 16:10:22.280 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Phenol.png
+2025-09-08 16:10:22.571 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Phosphoric Acid Derivative.png
+2025-09-08 16:10:22.911 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Phosphoric Acid Ester.png
+2025-09-08 16:10:23.191 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Primary Alcohol.png
+2025-09-08 16:10:23.466 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Primary Aliphatic Amine.png
+2025-09-08 16:10:23.741 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Primary Amine.png
+2025-09-08 16:10:24.004 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Primary Aromatic Amine.png
+2025-09-08 16:10:24.352 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Secondary Alcohol.png
+2025-09-08 16:10:24.642 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Secondary Aliphatic Amine.png
+2025-09-08 16:10:24.933 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Secondary Amine.png
+2025-09-08 16:10:25.228 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Tertiary Alcohol.png
+2025-09-08 16:10:25.519 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Tertiary Aliphatic Amine.png
+2025-09-08 16:10:25.853 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Tertiary Amine.png
+2025-09-08 16:10:26.144 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-Thiol.png
+2025-09-08 16:10:26.433 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a1.png
+2025-09-08 16:10:26.715 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a10.png
+2025-09-08 16:10:26.983 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a10a.png
+2025-09-08 16:10:27.318 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a11.png
+2025-09-08 16:10:27.589 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a11a.png
+2025-09-08 16:10:27.867 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a12.png
+2025-09-08 16:10:28.143 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a14.png
+2025-09-08 16:10:28.414 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a15.png
+2025-09-08 16:10:28.756 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a18.png
+2025-09-08 16:10:29.022 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a19.png
+2025-09-08 16:10:29.310 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a2.png
+2025-09-08 16:10:29.588 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a20.png
+2025-09-08 16:10:29.859 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a21.png
+2025-09-08 16:10:30.203 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a22.png
+2025-09-08 16:10:30.485 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a28.png
+2025-09-08 16:10:30.765 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a28a.png
+2025-09-08 16:10:31.042 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a34.png
+2025-09-08 16:10:31.335 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a40.png
+2025-09-08 16:10:31.667 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-a41.png
+2025-09-08 16:10:31.940 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b1.png
+2025-09-08 16:10:32.229 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b10.png
+2025-09-08 16:10:32.519 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b12.png
+2025-09-08 16:10:32.798 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b14.png
+2025-09-08 16:10:33.146 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b16.png
+2025-09-08 16:10:33.416 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b18.png
+2025-09-08 16:10:33.699 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b19.png
+2025-09-08 16:10:33.974 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b2.png
+2025-09-08 16:10:34.259 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b20.png
+2025-09-08 16:10:34.593 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b21.png
+2025-09-08 16:10:34.861 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b3.png
+2025-09-08 16:10:35.146 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b4.png
+2025-09-08 16:10:35.423 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b45.png
+2025-09-08 16:10:35.795 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b5.png
+2025-09-08 16:10:36.160 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b51.png
+2025-09-08 16:10:36.433 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b6.png
+2025-09-08 16:10:36.726 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b64.png
+2025-09-08 16:10:37.024 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b65.png
+2025-09-08 16:10:37.394 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b7.png
+2025-09-08 16:10:37.670 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b70.png
+2025-09-08 16:10:37.953 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b71.png
+2025-09-08 16:10:38.251 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b72.png
+2025-09-08 16:10:38.532 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b73.png
+2025-09-08 16:10:38.870 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b8.png
+2025-09-08 16:10:39.152 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b84.png
+2025-09-08 16:10:39.438 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b85.png
+2025-09-08 16:10:39.718 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b87.png
+2025-09-08 16:10:40.000 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b88.png
+2025-09-08 16:10:40.361 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-b9.png
+2025-09-08 16:10:40.644 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-i1.png
+2025-09-08 16:10:40.924 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-i2.png
+2025-09-08 16:10:41.226 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-i4.png
+2025-09-08 16:10:41.514 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n11.png
+2025-09-08 16:10:41.863 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n12.png
+2025-09-08 16:10:42.169 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n13.png
+2025-09-08 16:10:42.461 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n14.png
+2025-09-08 16:10:42.774 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n16.png
+2025-09-08 16:10:43.067 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n17.png
+2025-09-08 16:10:43.416 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n18.png
+2025-09-08 16:10:43.713 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n19.png
+2025-09-08 16:10:44.001 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n2.png
+2025-09-08 16:10:44.282 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n20.png
+2025-09-08 16:10:44.558 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n21.png
+2025-09-08 16:10:44.917 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n22.png
+2025-09-08 16:10:45.203 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n24.png
+2025-09-08 16:10:45.477 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n25.png
+2025-09-08 16:10:45.768 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n3.png
+2025-09-08 16:10:46.041 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n4.png
+2025-09-08 16:10:46.395 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n7.png
+2025-09-08 16:10:46.687 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n8.png
+2025-09-08 16:10:46.955 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-n9.png
+2025-09-08 16:10:47.236 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t1.png
+2025-09-08 16:10:47.505 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t105.png
+2025-09-08 16:10:47.840 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t106.png
+2025-09-08 16:10:48.128 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t107.png
+2025-09-08 16:10:48.396 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t11.png
+2025-09-08 16:10:48.680 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t110.png
+2025-09-08 16:10:48.969 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t115.png
+2025-09-08 16:10:49.333 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t116.png
+2025-09-08 16:10:49.626 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t12.png
+2025-09-08 16:10:49.928 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t159.png
+2025-09-08 16:10:50.223 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t160.png
+2025-09-08 16:10:50.498 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t17.png
+2025-09-08 16:10:50.851 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t17a.png
+2025-09-08 16:10:51.130 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t18.png
+2025-09-08 16:10:51.408 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t19.png
+2025-09-08 16:10:51.680 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t2.png
+2025-09-08 16:10:51.951 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t20.png
+2025-09-08 16:10:52.287 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t3.png
+2025-09-08 16:10:52.572 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t4.png
+2025-09-08 16:10:52.854 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t44.png
+2025-09-08 16:10:53.128 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t45.png
+2025-09-08 16:10:53.388 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t47.png
+2025-09-08 16:10:53.728 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t48.png
+2025-09-08 16:10:53.995 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t5.png
+2025-09-08 16:10:54.273 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t51.png
+2025-09-08 16:10:54.542 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t58a.png
+2025-09-08 16:10:54.817 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t64.png
+2025-09-08 16:10:55.165 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t73.png
+2025-09-08 16:10:55.435 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t74.png
+2025-09-08 16:10:55.727 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t75.png
+2025-09-08 16:10:56.038 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t76.png
+2025-09-08 16:10:56.388 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t77.png
+2025-09-08 16:10:56.663 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t78.png
+2025-09-08 16:10:56.942 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t84.png
+2025-09-08 16:10:57.228 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t85.png
+2025-09-08 16:10:57.529 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t9.png
+2025-09-08 16:10:57.883 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t93.png
+2025-09-08 16:10:58.179 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t94.png
+2025-09-08 16:10:58.457 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t95.png
+2025-09-08 16:10:58.751 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t96.png
+2025-09-08 16:10:59.027 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/mnsol-stats/stats-t97.png

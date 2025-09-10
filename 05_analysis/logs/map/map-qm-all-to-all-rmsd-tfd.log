@@ -1,0 +1,12 @@
+2025-09-09 23:37:10.464 | INFO     | __main__:main:132 - Read 1033322 entries from ../04_benchmark/qm/all-to-all-rmsd-tfd
+2025-09-09 23:37:10.464 | INFO     | __main__:main:135 - Read 1033322 entries from 1 files
+2025-09-09 23:37:10.986 | INFO     | __main__:main:150 - Found 11961 unique SMILES to label
+2025-09-09 23:37:11.032 | INFO     | __main__:main:156 - Loaded 88483 checkmol labels from labels/checkmol
+2025-09-09 23:37:11.255 | INFO     | __main__:main:161 - Loaded 579749 forcefield labels from labels/forcefields/v3-k100
+2025-09-09 23:37:15.342 | INFO     | __main__:main:199 - Found 175 unique Checkmol groups
+2025-09-09 23:37:15.343 | INFO     | __main__:main:206 - Found 51 unique Angles forcefield parameters
+2025-09-09 23:37:15.343 | INFO     | __main__:main:206 - Found 83 unique Bonds forcefield parameters
+2025-09-09 23:37:15.343 | INFO     | __main__:main:206 - Found 7 unique ImproperTorsions forcefield parameters
+2025-09-09 23:37:15.343 | INFO     | __main__:main:206 - Found 224 unique ProperTorsions forcefield parameters
+2025-09-09 23:37:15.343 | INFO     | __main__:main:206 - Found 26 unique vdW forcefield parameters
+2025-09-10 00:38:36.548 | INFO     | __main__:main:233 - Wrote 1033322 entries to output/qm/all-to-all-rmsd-tfd/labelled-data.csv

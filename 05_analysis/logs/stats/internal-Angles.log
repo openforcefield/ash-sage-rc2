@@ -1,0 +1,106 @@
+2025-09-10 01:55:54.571 | INFO     | __main__:main:274 - Loaded dataset with 53747374 rows
+2025-09-10 01:56:16.473 | INFO     | __main__:main:279 - Found 51 groups to compute
+2025-09-10 01:56:16.711 | INFO     | __main__:main:293 - Filtered to 24430290 records with specified force fields
+2025-09-10 01:56:16.948 | INFO     | __main__:main:301 - Group Angles-a10a: found 62302 entries
+2025-09-10 01:56:16.957 | INFO     | __main__:main:308 - Group Angles-a10a: filtered to 61040 records with all 5 force fields present
+2025-09-10 01:56:34.428 | INFO     | __main__:main:301 - Group Angles-a11: found 5613123 entries
+2025-09-10 01:56:35.874 | INFO     | __main__:main:308 - Group Angles-a11: filtered to 5591335 records with all 5 force fields present
+2025-09-10 02:24:12.803 | INFO     | __main__:main:301 - Group Angles-a11a: found 2430 entries
+2025-09-10 02:24:12.822 | INFO     | __main__:main:308 - Group Angles-a11a: filtered to 2430 records with all 5 force fields present
+2025-09-10 02:24:15.439 | INFO     | __main__:main:301 - Group Angles-a12: found 16333 entries
+2025-09-10 02:24:15.442 | INFO     | __main__:main:308 - Group Angles-a12: filtered to 16165 records with all 5 force fields present
+2025-09-10 02:24:21.418 | INFO     | __main__:main:301 - Group Angles-a13: found 395122 entries
+2025-09-10 02:24:21.469 | INFO     | __main__:main:308 - Group Angles-a13: filtered to 393640 records with all 5 force fields present
+2025-09-10 02:26:05.497 | INFO     | __main__:main:301 - Group Angles-a13a: found 37231 entries
+2025-09-10 02:26:05.503 | INFO     | __main__:main:308 - Group Angles-a13a: filtered to 36655 records with all 5 force fields present
+2025-09-10 02:26:16.098 | INFO     | __main__:main:301 - Group Angles-a14: found 1750785 entries
+2025-09-10 02:26:16.412 | INFO     | __main__:main:308 - Group Angles-a14: filtered to 1745465 records with all 5 force fields present
+2025-09-10 02:34:06.750 | INFO     | __main__:main:301 - Group Angles-a15: found 74555 entries
+2025-09-10 02:34:06.766 | INFO     | __main__:main:308 - Group Angles-a15: filtered to 73285 records with all 5 force fields present
+2025-09-10 02:34:25.716 | INFO     | __main__:main:301 - Group Angles-a15a: found 11853 entries
+2025-09-10 02:34:25.719 | INFO     | __main__:main:308 - Group Angles-a15a: filtered to 11845 records with all 5 force fields present
+2025-09-10 02:34:30.991 | INFO     | __main__:main:301 - Group Angles-a16: found 44052 entries
+2025-09-10 02:34:30.996 | INFO     | __main__:main:308 - Group Angles-a16: filtered to 43120 records with all 5 force fields present
+2025-09-10 02:34:45.095 | INFO     | __main__:main:301 - Group Angles-a17: found 607927 entries
+2025-09-10 02:34:45.170 | INFO     | __main__:main:308 - Group Angles-a17: filtered to 606555 records with all 5 force fields present
+2025-09-10 02:37:05.326 | INFO     | __main__:main:301 - Group Angles-a18: found 2767983 entries
+2025-09-10 02:37:05.868 | INFO     | __main__:main:308 - Group Angles-a18: filtered to 2759280 records with all 5 force fields present
+2025-09-10 02:50:57.754 | INFO     | __main__:main:301 - Group Angles-a18a: found 385280 entries
+2025-09-10 02:50:57.809 | INFO     | __main__:main:308 - Group Angles-a18a: filtered to 384025 records with all 5 force fields present
+2025-09-10 02:52:41.743 | INFO     | __main__:main:301 - Group Angles-a18b: found 2733 entries
+2025-09-10 02:52:41.746 | INFO     | __main__:main:308 - Group Angles-a18b: filtered to 2565 records with all 5 force fields present
+2025-09-10 02:52:44.589 | INFO     | __main__:main:301 - Group Angles-a19: found 1027666 entries
+2025-09-10 02:52:44.727 | INFO     | __main__:main:308 - Group Angles-a19: filtered to 1025270 records with all 5 force fields present
+2025-09-10 02:56:52.093 | INFO     | __main__:main:301 - Group Angles-a1a: found 305 entries
+2025-09-10 02:56:52.097 | INFO     | __main__:main:308 - Group Angles-a1a: filtered to 305 records with all 5 force fields present
+2025-09-10 02:56:54.574 | INFO     | __main__:main:301 - Group Angles-a2: found 3089827 entries
+2025-09-10 02:56:55.190 | INFO     | __main__:main:308 - Group Angles-a2: filtered to 3060315 records with all 5 force fields present
+2025-09-10 03:11:34.786 | INFO     | __main__:main:301 - Group Angles-a20: found 2200257 entries
+2025-09-10 03:11:35.173 | INFO     | __main__:main:308 - Group Angles-a20: filtered to 2193990 records with all 5 force fields present
+2025-09-10 03:20:40.307 | INFO     | __main__:main:301 - Group Angles-a21: found 756332 entries
+2025-09-10 03:20:40.407 | INFO     | __main__:main:308 - Group Angles-a21: filtered to 754720 records with all 5 force fields present
+2025-09-10 03:24:03.176 | INFO     | __main__:main:301 - Group Angles-a22: found 604829 entries
+2025-09-10 03:24:03.252 | INFO     | __main__:main:308 - Group Angles-a22: filtered to 603625 records with all 5 force fields present
+2025-09-10 03:26:23.352 | INFO     | __main__:main:301 - Group Angles-a23: found 200 entries
+2025-09-10 03:26:23.355 | INFO     | __main__:main:308 - Group Angles-a23: filtered to 200 records with all 5 force fields present
+2025-09-10 03:26:25.391 | INFO     | __main__:main:301 - Group Angles-a24: found 2295 entries
+2025-09-10 03:26:25.393 | INFO     | __main__:main:308 - Group Angles-a24: filtered to 2295 records with all 5 force fields present
+2025-09-10 03:26:27.941 | INFO     | __main__:main:301 - Group Angles-a24a: found 670 entries
+2025-09-10 03:26:27.942 | INFO     | __main__:main:308 - Group Angles-a24a: filtered to 670 records with all 5 force fields present
+2025-09-10 03:26:30.137 | INFO     | __main__:main:301 - Group Angles-a25: found 13788 entries
+2025-09-10 03:26:30.139 | INFO     | __main__:main:308 - Group Angles-a25: filtered to 13620 records with all 5 force fields present
+2025-09-10 03:26:35.700 | INFO     | __main__:main:301 - Group Angles-a26: found 6894 entries
+2025-09-10 03:26:35.701 | INFO     | __main__:main:308 - Group Angles-a26: filtered to 6810 records with all 5 force fields present
+2025-09-10 03:26:39.433 | INFO     | __main__:main:301 - Group Angles-a27: found 345 entries
+2025-09-10 03:26:39.434 | INFO     | __main__:main:308 - Group Angles-a27: filtered to 345 records with all 5 force fields present
+2025-09-10 03:26:41.551 | INFO     | __main__:main:301 - Group Angles-a28: found 434990 entries
+2025-09-10 03:26:41.605 | INFO     | __main__:main:308 - Group Angles-a28: filtered to 427255 records with all 5 force fields present
+2025-09-10 03:28:32.207 | INFO     | __main__:main:301 - Group Angles-a28a: found 153569 entries
+2025-09-10 03:28:32.227 | INFO     | __main__:main:308 - Group Angles-a28a: filtered to 149425 records with all 5 force fields present
+2025-09-10 03:29:07.947 | INFO     | __main__:main:301 - Group Angles-a29: found 41920 entries
+2025-09-10 03:29:07.953 | INFO     | __main__:main:308 - Group Angles-a29: filtered to 41670 records with all 5 force fields present
+2025-09-10 03:29:23.257 | INFO     | __main__:main:301 - Group Angles-a3: found 100992 entries
+2025-09-10 03:29:23.271 | INFO     | __main__:main:308 - Group Angles-a3: filtered to 99780 records with all 5 force fields present
+2025-09-10 03:29:52.143 | INFO     | __main__:main:301 - Group Angles-a30: found 980 entries
+2025-09-10 03:29:52.146 | INFO     | __main__:main:308 - Group Angles-a30: filtered to 860 records with all 5 force fields present
+2025-09-10 03:29:54.423 | INFO     | __main__:main:301 - Group Angles-a31: found 468450 entries
+2025-09-10 03:29:54.487 | INFO     | __main__:main:308 - Group Angles-a31: filtered to 465780 records with all 5 force fields present
+2025-09-10 03:31:50.794 | INFO     | __main__:main:301 - Group Angles-a32: found 404275 entries
+2025-09-10 03:31:50.845 | INFO     | __main__:main:308 - Group Angles-a32: filtered to 402050 records with all 5 force fields present
+2025-09-10 03:33:37.574 | INFO     | __main__:main:301 - Group Angles-a33: found 13485 entries
+2025-09-10 03:33:37.579 | INFO     | __main__:main:308 - Group Angles-a33: filtered to 13485 records with all 5 force fields present
+2025-09-10 03:33:43.203 | INFO     | __main__:main:301 - Group Angles-a33a: found 4715 entries
+2025-09-10 03:33:43.205 | INFO     | __main__:main:308 - Group Angles-a33a: filtered to 4715 records with all 5 force fields present
+2025-09-10 03:33:46.297 | INFO     | __main__:main:301 - Group Angles-a34: found 74229 entries
+2025-09-10 03:33:46.306 | INFO     | __main__:main:308 - Group Angles-a34: filtered to 74015 records with all 5 force fields present
+2025-09-10 03:34:05.038 | INFO     | __main__:main:301 - Group Angles-a37: found 45904 entries
+2025-09-10 03:34:05.044 | INFO     | __main__:main:308 - Group Angles-a37: filtered to 45810 records with all 5 force fields present
+2025-09-10 03:34:21.595 | INFO     | __main__:main:301 - Group Angles-a38: found 8420 entries
+2025-09-10 03:34:21.597 | INFO     | __main__:main:308 - Group Angles-a38: filtered to 8420 records with all 5 force fields present
+2025-09-10 03:34:25.580 | INFO     | __main__:main:301 - Group Angles-a39: found 2740 entries
+2025-09-10 03:34:25.581 | INFO     | __main__:main:308 - Group Angles-a39: filtered to 2740 records with all 5 force fields present
+2025-09-10 03:34:28.397 | INFO     | __main__:main:301 - Group Angles-a4: found 367946 entries
+2025-09-10 03:34:28.441 | INFO     | __main__:main:308 - Group Angles-a4: filtered to 365090 records with all 5 force fields present
+2025-09-10 03:36:09.189 | INFO     | __main__:main:301 - Group Angles-a40: found 79341 entries
+2025-09-10 03:36:09.201 | INFO     | __main__:main:308 - Group Angles-a40: filtered to 77205 records with all 5 force fields present
+2025-09-10 03:36:29.297 | INFO     | __main__:main:301 - Group Angles-a41: found 2073455 entries
+2025-09-10 03:36:29.647 | INFO     | __main__:main:308 - Group Angles-a41: filtered to 2065880 records with all 5 force fields present
+2025-09-10 03:45:11.992 | INFO     | __main__:main:301 - Group Angles-a41a: found 54214 entries
+2025-09-10 03:45:12.007 | INFO     | __main__:main:308 - Group Angles-a41a: filtered to 54080 records with all 5 force fields present
+2025-09-10 03:45:27.640 | INFO     | __main__:main:301 - Group Angles-a42: found 9405 entries
+2025-09-10 03:45:27.642 | INFO     | __main__:main:308 - Group Angles-a42: filtered to 9405 records with all 5 force fields present
+2025-09-10 03:45:31.780 | INFO     | __main__:main:301 - Group Angles-a4a: found 1110 entries
+2025-09-10 03:45:31.780 | INFO     | __main__:main:308 - Group Angles-a4a: filtered to 1110 records with all 5 force fields present
+2025-09-10 03:45:34.062 | INFO     | __main__:main:301 - Group Angles-a5: found 88061 entries
+2025-09-10 03:45:34.073 | INFO     | __main__:main:308 - Group Angles-a5: filtered to 87485 records with all 5 force fields present
+2025-09-10 03:46:01.560 | INFO     | __main__:main:301 - Group Angles-a6: found 82061 entries
+2025-09-10 03:46:01.570 | INFO     | __main__:main:308 - Group Angles-a6: filtered to 81525 records with all 5 force fields present
+2025-09-10 03:46:23.045 | INFO     | __main__:main:301 - Group Angles-a7: found 45044 entries
+2025-09-10 03:46:23.051 | INFO     | __main__:main:308 - Group Angles-a7: filtered to 44900 records with all 5 force fields present
+2025-09-10 03:46:37.082 | INFO     | __main__:main:301 - Group Angles-a7a: found 97554 entries
+2025-09-10 03:46:37.096 | INFO     | __main__:main:308 - Group Angles-a7a: filtered to 97410 records with all 5 force fields present
+2025-09-10 03:47:06.136 | INFO     | __main__:main:301 - Group Angles-a8: found 38850 entries
+2025-09-10 03:47:06.143 | INFO     | __main__:main:308 - Group Angles-a8: filtered to 38670 records with all 5 force fields present
+2025-09-10 03:47:16.966 | INFO     | __main__:main:301 - Group Angles-a9: found 263463 entries
+2025-09-10 03:47:16.997 | INFO     | __main__:main:308 - Group Angles-a9: filtered to 263175 records with all 5 force fields present
+2025-09-10 03:48:20.904 | INFO     | __main__:main:329 - Saved combined stats to output/qm/mm-qm-diff/stats/Angles.csv

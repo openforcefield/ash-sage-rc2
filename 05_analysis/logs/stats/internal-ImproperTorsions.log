@@ -1,0 +1,16 @@
+2025-09-10 03:49:23.961 | INFO     | __main__:main:274 - Loaded dataset with 4735136 rows
+2025-09-10 03:49:25.837 | INFO     | __main__:main:279 - Found 6 groups to compute
+2025-09-10 03:49:25.869 | INFO     | __main__:main:293 - Filtered to 2152516 records with specified force fields
+2025-09-10 03:49:25.930 | INFO     | __main__:main:301 - Group ImproperTorsions-i2: found 157175 entries
+2025-09-10 03:49:25.944 | INFO     | __main__:main:308 - Group ImproperTorsions-i2: filtered to 655 records with all 5 force fields present
+2025-09-10 03:49:28.142 | INFO     | __main__:main:301 - Group ImproperTorsions-i3: found 101372 entries
+2025-09-10 03:49:28.151 | INFO     | __main__:main:308 - Group ImproperTorsions-i3: filtered to 17790 records with all 5 force fields present
+2025-09-10 03:49:34.315 | INFO     | __main__:main:301 - Group ImproperTorsions-i4: found 1165983 entries
+2025-09-10 03:49:34.416 | INFO     | __main__:main:308 - Group ImproperTorsions-i4: filtered to 141735 records with all 5 force fields present
+2025-09-10 03:50:08.392 | INFO     | __main__:main:301 - Group ImproperTorsions-i5: found 160447 entries
+2025-09-10 03:50:08.408 | INFO     | __main__:main:308 - Group ImproperTorsions-i5: filtered to 21895 records with all 5 force fields present
+2025-09-10 03:50:16.543 | INFO     | __main__:main:301 - Group ImproperTorsions-i6: found 263664 entries
+2025-09-10 03:50:16.569 | INFO     | __main__:main:308 - Group ImproperTorsions-i6: filtered to 52310 records with all 5 force fields present
+2025-09-10 03:50:32.131 | INFO     | __main__:main:301 - Group ImproperTorsions-i7: found 303875 entries
+2025-09-10 03:50:32.158 | INFO     | __main__:main:308 - Group ImproperTorsions-i7: filtered to 12560 records with all 5 force fields present
+2025-09-10 03:50:37.415 | INFO     | __main__:main:329 - Saved combined stats to output/qm/mm-qm-diff/stats/ImproperTorsions.csv

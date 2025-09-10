@@ -25,7 +25,6 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 from loguru import logger
-from cinnabar.stats import bootstrap_statistic
 from plot_helpers import get_limits
 
 logger.remove()
@@ -62,35 +61,6 @@ def plot_errorbar(
         lw=linewidth,
     )
 
-
-def compute_stats(
-    df: pd.DataFrame,
-    forcefield_col: str = "FF",
-    x_col: str = None,
-    y_col: str = None,
-    xerr_col: str = None,
-    yerr_col: str = None,
-) -> pd.DataFrame:
-    stat_rows = []
-
-    for ff, subdf in df.groupby(by=forcefield_col):
-        y = subdf[y_col].values
-        yerr = subdf[yerr_col].values
-        x = subdf[x_col].values
-        xerr = subdf[xerr_col].values
-
-        for i, stat in enumerate(["RMSE", "MUE", "R2", "rho"], 1):
-            s = bootstrap_statistic(
-                x,
-                y,
-                xerr,
-                yerr,
-                statistic=stat,
-            )
-            stat_row = {forcefield_col: ff, "stat": stat, "n": len(subdf)}
-            stat_row.update(s)
-            stat_rows.append(stat_row)
-    return pd.DataFrame(stat_rows)
 
 
 def scatterplot_group_with_stats(
@@ -175,12 +145,6 @@ def scatterplot_group_with_stats(
     if plot_hue:
         g.add_legend()
 
-    if stat_df is None:
-        stat_df = compute_stats(
-            subdf, x_col=x_col, y_col=y_col, xerr_col=xerr_col, yerr_col=yerr_col
-        )
-        stat_df["group"] = group
-
     limits = get_limits(df, x_col, y_col)
 
     for col_name, ax in g.axes_dict.items():
@@ -189,7 +153,7 @@ def scatterplot_group_with_stats(
         ax.plot(limits, limits, ls="--", color="gray", lw=1)
 
         rows = stat_df[stat_df[forcefield_col] == col_name]
-        assert len(rows) == 4, f"Expected 4 stats for {col_name}, got {len(rows)}"
+        assert len(rows) == 5, f"Expected 5 stats for {col_name}, got {len(rows)}"
         stat_str = f"{col_name}\n"
         for _, row in rows.iterrows():
             stat_str += (
@@ -215,11 +179,13 @@ def scatterplot_group_with_stats(
     help="Input CSV file containing the data to plot.",
 )
 @click.option(
-    "--output",
-    "-o",
-    "output_file",
+    "--statistics",
+    "-s",
+    "statistics_files",
     type=click.Path(exists=False, file_okay=True, dir_okay=False),
-    help="Output CSV file for saving computed statistics.",
+    multiple=True,
+    required=True,
+    help="Input CSV file(s) containing pre-computed statistics.",
 )
 @click.option(
     "--images",
@@ -319,7 +285,7 @@ def scatterplot_group_with_stats(
 )
 def main(
     input_file: str,
-    output_file: str,
+    statistics_files: list[str],
     image_directory: str,
     x_col: str = None,
     y_col: str = None,
@@ -353,13 +319,15 @@ def main(
     image_directory = pathlib.Path(image_directory)
     image_directory.mkdir(parents=True, exist_ok=True)
 
-    output_file = pathlib.Path(output_file)
-    if output_file.exists():
-        stat_df = pd.read_csv(output_file)
-    else:
-        stat_df = None
 
     stat_dfs = []
+    for statistics_file in statistics_files:
+        logger.info(f"Reading statistics from {statistics_file}")
+        stats_df = pd.read_csv(statistics_file)
+        stat_dfs.append(stats_df)
+    stat_df = pd.concat(stat_dfs, ignore_index=True)
+
+
     first_ff = list(df[forcefield_col].unique())[0]
     ffdf = df[df[forcefield_col] == first_ff]
     for group in tqdm.tqdm(groups_to_plot, desc="Plotting groups"):
@@ -369,26 +337,28 @@ def main(
             logger.info(f"Skipping group {group} with {n_entries} entries (< {n_min_entries})")
             continue
 
-        group_stat_df = None
-        if stat_df is not None:
-            group_stat_df = stat_df[stat_df["group"] == group]
+        group_stat_df = stat_df[stat_df["group"] == group]
 
-        g, stats_df = scatterplot_group_with_stats(
-            df,
-            group=group,
-            forcefield_col=forcefield_col,
-            forcefield_order=forcefield_order,
-            height=height,
-            aspect=aspect,
-            x_col=x_col,
-            y_col=y_col,
-            xerr_col=xerr_col,
-            yerr_col=yerr_col,
-            plot_hue=plot_hue,
-            stat_fontsize=stat_fontsize,
-            unit_str=unit_str,
-            stat_df=group_stat_df,
-        )
+        try:
+            g, stats_df = scatterplot_group_with_stats(
+                df,
+                group=group,
+                forcefield_col=forcefield_col,
+                forcefield_order=forcefield_order,
+                height=height,
+                aspect=aspect,
+                x_col=x_col,
+                y_col=y_col,
+                xerr_col=xerr_col,
+                yerr_col=yerr_col,
+                plot_hue=plot_hue,
+                stat_fontsize=stat_fontsize,
+                unit_str=unit_str,
+                stat_df=group_stat_df,
+            )
+        except Exception as e:
+            logger.warning(f"Failed to plot group {group}: {e}")
+            continue
         plt.tight_layout()
 
         subfile = f"scatter-{group}.png"
@@ -398,16 +368,6 @@ def main(
         g.savefig(imgfile, dpi=300)
         logger.info(f"Saved scatter plot for group {group} to {imgfile}")
         plt.close()
-
-        stat_dfs.append(stats_df)
-
-    # Concatenate all stats DataFrames
-    output_file = pathlib.Path(output_file)
-    output_file.parent.mkdir(parents=True, exist_ok=True)
-    if not (output_file.is_file() and output_file.exists()):
-        all_stats_df = pd.concat(stat_dfs, ignore_index=True)
-        all_stats_df.to_csv(output_file, index=False)
-        logger.info(f"Saved combined stats to {output_file}")
 
 
 if __name__ == "__main__":

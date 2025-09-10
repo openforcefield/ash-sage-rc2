@@ -1,0 +1,9 @@
+2025-09-09 22:33:51.354 | INFO     | __main__:main:90 - Loaded to 1500 rows
+2025-09-09 22:33:51.355 | INFO     | __main__:main:93 - Filtered to 1500 rows with given force fields
+2025-09-09 22:33:51.355 | INFO     | __main__:main:96 - Filtered to 300 rows with statistic RMSE
+2025-09-09 22:33:51.355 | INFO     | __main__:main:98 - Comparing v3-k100 to Sage 2.2.1
+2025-09-09 22:33:51.356 | INFO     | __main__:main:111 - Merged to 150 rows
+2025-09-09 22:33:51.358 | INFO     | __main__:main:126 - Found 8 significant changes (8 improved, 0 worsened)
+2025-09-09 22:33:51.358 | INFO     | __main__:main:129 - Improved: t8, a10a, a15, b20, t107, Carboxylic Acid Ester, t110, i2
+2025-09-09 22:33:51.358 | INFO     | __main__:main:130 - Worsened: 
+2025-09-09 22:33:51.359 | INFO     | __main__:main:135 - Wrote changes to output/phys-prop/dhmix-all/largest-differences.csv

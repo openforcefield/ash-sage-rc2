@@ -1,0 +1,9 @@
+2025-09-09 22:33:50.606 | INFO     | __main__:main:90 - Loaded to 1560 rows
+2025-09-09 22:33:50.607 | INFO     | __main__:main:93 - Filtered to 1560 rows with given force fields
+2025-09-09 22:33:50.607 | INFO     | __main__:main:96 - Filtered to 312 rows with statistic RMSE
+2025-09-09 22:33:50.607 | INFO     | __main__:main:98 - Comparing v3-k100 to Sage 2.2.1
+2025-09-09 22:33:50.608 | INFO     | __main__:main:111 - Merged to 156 rows
+2025-09-09 22:33:50.610 | INFO     | __main__:main:126 - Found 79 significant changes (79 improved, 0 worsened)
+2025-09-09 22:33:50.610 | INFO     | __main__:main:129 - Improved: a12, t20, Alkene, Lactam, t23, t67, n25, Alkyl Bromide, b73, t12, b10, Carboxylic Acid Amide, b9, Carboxylic Acid Tertiary Amide, a18a, t80, t75, t77, a20, t64, t7, Alkylarylether, t105, b19, Halogen Derivative, b71, a11a, a41, i4, Alkyl Chloride, t11, t18, a14, t19, n24, b3, t17, Carbonyl, Ketone, n17, b21, Carboxylic Acid Derivative, t2, t1, t4, i1, a10, n14, a10a, n2, Carboxylic Acid Ester, b20, t107, t110, a15, i2, b1, n3, n18, b16, t95, Heterocycle, n16, a1, t3, b84, All, a28, a2, t97, Ether, t96, a11, Dialkylether, b85, n7, t5, t9, t17a
+2025-09-09 22:33:50.610 | INFO     | __main__:main:130 - Worsened: 
+2025-09-09 22:33:50.611 | INFO     | __main__:main:135 - Wrote changes to output/phys-prop/density-all/largest-differences.csv

@@ -80,14 +80,19 @@ def main(
 
     all_rows = []
     for smiles in tqdm.tqdm(sorted(all_smiles), desc="Labeling SMILES"):
-        smiles = sanitize_smiles(smiles)
+        sanitized = sanitize_smiles(smiles)
         try:
-            groups = analyze_functional_groups(smiles)
+            groups = analyze_functional_groups(sanitized)
         except Exception as e:
-            logger.warning(f"Failed to label {smiles}: {e}")
+            logger.warning(f"Failed to label {sanitized}: {e}")
             continue
         
         for group in groups:
+            row = {
+                "smiles": sanitized,
+                "group": group.value
+            }
+            all_rows.append(row)
             row = {
                 "smiles": smiles,
                 "group": group.value

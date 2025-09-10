@@ -2,8 +2,8 @@
 Plot aggregated statistics with error bars.
 
 This returns a FacetGrid plot with two panels:
-* Error (RMSE and MUE)
-* Correlation (rho and R2)
+* Error (RMSE, MUE, MSE)
+* Correlation (rho, R2)
 """
 
 import click
@@ -21,7 +21,13 @@ from loguru import logger
 logger.remove()
 logger.add(sys.stdout)
 
-PANEL_MAP = {"RMSE": "Error", "MUE": "Error", "rho": "Correlation", "R2": "Correlation"}
+PANEL_MAP = {
+    "RMSE": "Error",
+    "MUE": "Error",
+    "MSE": "Error",
+    "rho": "Correlation",
+    "R2": "Correlation",
+}
 
 
 def draw_errorbars(
@@ -50,9 +56,13 @@ def draw_errorbars(
 
     for _, row in data.iterrows():
         if xerr_low is not None:
-            xerr = np.array([[row[x] - row[xerr_low]], [row[xerr_high] - row[x]]])
+            xerr = np.array(
+                [[max(row[x] - row[xerr_low], 0)], [max(row[xerr_high] - row[x], 0)]]
+            )
         if yerr_low is not None:
-            yerr = np.array([[row[y] - row[yerr_low]], [row[yerr_high] - row[y]]])
+            yerr = np.array(
+                [[max(row[y] - row[yerr_low], 0)], [max(row[yerr_high] - row[y], 0)]]
+            )
         ax.errorbar(
             row[x], row[y], xerr=xerr, yerr=yerr, fmt=fmt, capsize=capsize, **kwargs
         )
@@ -66,7 +76,7 @@ def plot_facetgrid(
     height: float = 4,
     aspect: float = 1,
     unit_str: str = "[kJ/mol]",
-    title: str | None = None
+    title: str | None = None,
 ):
     df = df.copy()
 
@@ -106,6 +116,7 @@ def plot_facetgrid(
         ax.set_xlabel("")
         if panel == "Error":
             ax.set_ylabel(f"{panel} {unit_str}")
+            ax.axhline(0, ls="--", color="gray", lw=1)
         else:
             ax.set_ylabel(panel)
 
@@ -122,8 +133,11 @@ def plot_facetgrid(
 @click.option(
     "--input-file",
     "-i",
+    "input_files",
+    multiple=True,
     type=click.Path(exists=True, dir_okay=False, file_okay=True),
-    help="Path to the input CSV file.",
+    help="Path to the input/s CSV file/s.",
+    required=True,
 )
 @click.option(
     "--image-directory",
@@ -176,7 +190,7 @@ def plot_facetgrid(
     help="Unit string to display on the y-axis.",
 )
 def main(
-    input_file: str,
+    input_files: list[str],
     image_directory: str,
     force_field_order: list[str],
     force_field_col: str = "FF",
@@ -185,8 +199,12 @@ def main(
     aspect: float = 1,
     unit_str: str = "[kJ/mol]",
 ):
-    df = pd.read_csv(input_file)
-    logger.info(f"Read {len(df)} rows from {input_file}")
+    dfs = []
+    for input_file in input_files:
+        df = pd.read_csv(input_file)
+        logger.info(f"Read {len(df)} rows from {input_file}")
+        dfs.append(df)
+    df = pd.concat(dfs, ignore_index=True)
 
     df = df[df[force_field_col].isin(force_field_order)]
     logger.info(f"Filtered to {len(df)} rows with given force fields")
@@ -206,12 +224,13 @@ def main(
             height=height,
             aspect=aspect,
             unit_str=unit_str,
-            title=title
+            title=title,
         )
         output_file = image_directory / f"stats-{group}.png"
         plt.savefig(output_file, dpi=300)
         logger.info(f"Saved plot to {output_file}")
         plt.close()
+
 
 if __name__ == "__main__":
     main()

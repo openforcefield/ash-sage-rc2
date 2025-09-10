@@ -1,0 +1,12 @@
+2025-09-10 03:48:23.685 | INFO     | __main__:main:274 - Loaded dataset with 87207124 rows
+2025-09-10 03:49:00.356 | INFO     | __main__:main:279 - Found 225 groups to compute
+2025-09-10 03:49:00.864 | INFO     | __main__:main:293 - Filtered to 39631182 records with specified force fields
+2025-09-10 03:49:01.197 | INFO     | __main__:main:301 - Group ProperTorsions-t10: found 54050 entries
+2025-09-10 03:49:01.205 | INFO     | __main__:main:308 - Group ProperTorsions-t10: filtered to 54050 records with all 5 force fields present
+2025-09-10 03:49:17.157 | INFO     | __main__:main:301 - Group ProperTorsions-t100: found 700 entries
+2025-09-10 03:49:17.158 | INFO     | __main__:main:308 - Group ProperTorsions-t100: filtered to 700 records with all 5 force fields present
+2025-09-10 03:49:19.390 | INFO     | __main__:main:301 - Group ProperTorsions-t101: found 275 entries
+2025-09-10 03:49:19.391 | INFO     | __main__:main:308 - Group ProperTorsions-t101: filtered to 275 records with all 5 force fields present
+2025-09-10 03:49:21.482 | INFO     | __main__:main:301 - Group ProperTorsions-t102: found 10 entries
+2025-09-10 03:49:21.482 | INFO     | __main__:main:308 - Group ProperTorsions-t102: filtered to 10 records with all 5 force fields present
+[66.04883118 66.04883118] [58.34140028 58.34140028]

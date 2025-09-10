@@ -1,0 +1,9 @@
+2025-09-10 06:13:36.634 | INFO     | __main__:main:90 - Loaded to 1275 rows
+2025-09-10 06:13:36.634 | INFO     | __main__:main:93 - Filtered to 510 rows with given force fields
+2025-09-10 06:13:36.635 | INFO     | __main__:main:96 - Filtered to 102 rows with statistic RMSE
+2025-09-10 06:13:36.635 | INFO     | __main__:main:98 - Comparing v3-k100 to Sage 2.2.1
+2025-09-10 06:13:36.635 | INFO     | __main__:main:111 - Merged to 51 rows
+2025-09-10 06:13:36.637 | INFO     | __main__:main:126 - Found 45 significant changes (23 improved, 22 worsened)
+2025-09-10 06:13:36.637 | INFO     | __main__:main:129 - Improved: a4a, a1a, a11a, a42, a10a, a7, a7a, a33a, a18b, a15a, a33, a28a, a26, a21, a19, a15, a28, a4, a18, a29, a20, a25, a8
+2025-09-10 06:13:36.637 | INFO     | __main__:main:130 - Worsened: a13, a41, a14, a11, a3, a9, a17, a22, a38, a5, a6, a2, a30, a34, a32, a31, a37, a41a, a24, a13a, a24a, a12
+2025-09-10 06:13:36.638 | INFO     | __main__:main:135 - Wrote changes to output/qm/mm-qm-diff/largest-differences-angles.csv

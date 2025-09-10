@@ -1,0 +1,83 @@
+2025-09-08 16:57:46.207 | INFO     | __main__:main:205 - Read 385 rows from output/phys-prop/dhmix-validation/stats/Sage-2.0.0.csv
+2025-09-08 16:57:46.208 | INFO     | __main__:main:205 - Read 385 rows from output/phys-prop/dhmix-validation/stats/Sage-2.2.1.csv
+2025-09-08 16:57:46.209 | INFO     | __main__:main:205 - Read 385 rows from output/phys-prop/dhmix-validation/stats/Sage-2.3.0rc1.csv
+2025-09-08 16:57:46.210 | INFO     | __main__:main:205 - Read 385 rows from output/phys-prop/dhmix-validation/stats/v1-k100.csv
+2025-09-08 16:57:46.212 | INFO     | __main__:main:205 - Read 385 rows from output/phys-prop/dhmix-validation/stats/v3-k100.csv
+2025-09-08 16:57:46.213 | INFO     | __main__:main:210 - Filtered to 1925 rows with given force fields
+2025-09-08 16:57:46.635 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Alcohol.png
+2025-09-08 16:57:46.917 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Alkane.png
+2025-09-08 16:57:47.194 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Alkyl Bromide.png
+2025-09-08 16:57:47.463 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Alkyl Chloride.png
+2025-09-08 16:57:47.746 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Alkyl Fluoride.png
+2025-09-08 16:57:48.062 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-All.png
+2025-09-08 16:57:48.335 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Aromatic.png
+2025-09-08 16:57:48.611 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Carboxylic Acid Derivative.png
+2025-09-08 16:57:48.882 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Carboxylic Acid Ester.png
+2025-09-08 16:57:49.160 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Dialkylether.png
+2025-09-08 16:57:49.494 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Ether.png
+2025-09-08 16:57:49.753 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Halogen Derivative.png
+2025-09-08 16:57:50.024 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Hydroxy.png
+2025-09-08 16:57:50.298 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Orthocarboxylic Acid Derivative.png
+2025-09-08 16:57:50.570 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-Primary Alcohol.png
+2025-09-08 16:57:50.906 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a1.png
+2025-09-08 16:57:51.181 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a10.png
+2025-09-08 16:57:51.470 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a10a.png
+2025-09-08 16:57:51.762 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a11.png
+2025-09-08 16:57:52.136 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a15.png
+2025-09-08 16:57:52.411 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a2.png
+2025-09-08 16:57:52.680 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a28.png
+2025-09-08 16:57:52.942 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a28a.png
+2025-09-08 16:57:53.210 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-a41.png
+2025-09-08 16:57:53.528 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b1.png
+2025-09-08 16:57:53.793 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b14.png
+2025-09-08 16:57:54.073 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b16.png
+2025-09-08 16:57:54.346 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b2.png
+2025-09-08 16:57:54.616 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b20.png
+2025-09-08 16:57:54.940 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b21.png
+2025-09-08 16:57:55.218 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b3.png
+2025-09-08 16:57:55.485 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b5.png
+2025-09-08 16:57:55.740 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b69.png
+2025-09-08 16:57:56.011 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b71.png
+2025-09-08 16:57:56.346 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b73.png
+2025-09-08 16:57:56.621 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b84.png
+2025-09-08 16:57:56.892 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b85.png
+2025-09-08 16:57:57.156 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-b88.png
+2025-09-08 16:57:57.424 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-i1.png
+2025-09-08 16:57:57.750 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-i2.png
+2025-09-08 16:57:58.022 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n12.png
+2025-09-08 16:57:58.294 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n14.png
+2025-09-08 16:57:58.560 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n16.png
+2025-09-08 16:57:58.822 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n17.png
+2025-09-08 16:57:59.170 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n18.png
+2025-09-08 16:57:59.439 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n19.png
+2025-09-08 16:57:59.697 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n2.png
+2025-09-08 16:57:59.954 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n23.png
+2025-09-08 16:58:00.221 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n24.png
+2025-09-08 16:58:00.554 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n25.png
+2025-09-08 16:58:00.830 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n3.png
+2025-09-08 16:58:01.103 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n7.png
+2025-09-08 16:58:01.379 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-n9.png
+2025-09-08 16:58:01.647 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t1.png
+2025-09-08 16:58:01.962 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t10.png
+2025-09-08 16:58:02.229 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t107.png
+2025-09-08 16:58:02.498 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t11.png
+2025-09-08 16:58:02.783 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t110.png
+2025-09-08 16:58:03.116 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t12.png
+2025-09-08 16:58:03.392 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t17.png
+2025-09-08 16:58:03.666 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t17a.png
+2025-09-08 16:58:03.933 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t18.png
+2025-09-08 16:58:04.202 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t19.png
+2025-09-08 16:58:04.534 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t2.png
+2025-09-08 16:58:04.807 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t3.png
+2025-09-08 16:58:05.115 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t4.png
+2025-09-08 16:58:05.388 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t44.png
+2025-09-08 16:58:05.655 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t5.png
+2025-09-08 16:58:06.003 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t6.png
+2025-09-08 16:58:06.283 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t7.png
+2025-09-08 16:58:06.558 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t8.png
+2025-09-08 16:58:06.834 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t9.png
+2025-09-08 16:58:07.115 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t93.png
+2025-09-08 16:58:07.462 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t94.png
+2025-09-08 16:58:07.739 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t95.png
+2025-09-08 16:58:08.013 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t96.png
+2025-09-08 16:58:08.277 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/dhmix-validation/stats-t97.png

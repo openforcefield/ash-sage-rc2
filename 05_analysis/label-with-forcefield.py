@@ -103,8 +103,8 @@ def main(
 
     all_rows = []
     for smiles in tqdm.tqdm(sorted(all_smiles), desc="Labeling SMILES"):
-        smiles = sanitize_smiles(smiles)
-        mol = Molecule.from_smiles(smiles, allow_undefined_stereo=True)
+        sanitized = sanitize_smiles(smiles)
+        mol = Molecule.from_smiles(sanitized, allow_undefined_stereo=True)
         labels = forcefield.label_molecules(mol.to_topology())[0]
 
         PARAMETER_TYPES = ["Bonds", "Angles", "ProperTorsions", "ImproperTorsions", "vdW"]
@@ -114,6 +114,13 @@ def main(
             for parameter_id in parameter_ids:
                 row = {
                     "smiles": smiles,
+                    "forcefield": forcefield_name,
+                    "parameter_type": parameter_type,
+                    "parameter_id": parameter_id,
+                }
+                all_rows.append(row)
+                row = {
+                    "smiles": sanitized,
                     "forcefield": forcefield_name,
                     "parameter_type": parameter_type,
                     "parameter_id": parameter_id,

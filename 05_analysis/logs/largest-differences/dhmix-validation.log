@@ -1,0 +1,9 @@
+2025-09-09 22:33:51.755 | INFO     | __main__:main:90 - Loaded to 770 rows
+2025-09-09 22:33:51.756 | INFO     | __main__:main:93 - Filtered to 770 rows with given force fields
+2025-09-09 22:33:51.756 | INFO     | __main__:main:96 - Filtered to 154 rows with statistic RMSE
+2025-09-09 22:33:51.756 | INFO     | __main__:main:98 - Comparing v3-k100 to Sage 2.2.1
+2025-09-09 22:33:51.757 | INFO     | __main__:main:111 - Merged to 77 rows
+2025-09-09 22:33:51.758 | INFO     | __main__:main:126 - Found 6 significant changes (6 improved, 0 worsened)
+2025-09-09 22:33:51.758 | INFO     | __main__:main:129 - Improved: a41, t18, t17, t19, b3, a10a
+2025-09-09 22:33:51.758 | INFO     | __main__:main:130 - Worsened: 
+2025-09-09 22:33:51.759 | INFO     | __main__:main:135 - Wrote changes to output/phys-prop/dhmix-validation/largest-differences.csv

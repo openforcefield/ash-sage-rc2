@@ -1,0 +1,9 @@
+2025-09-10 06:13:36.979 | INFO     | __main__:main:90 - Loaded to 2100 rows
+2025-09-10 06:13:36.980 | INFO     | __main__:main:93 - Filtered to 840 rows with given force fields
+2025-09-10 06:13:36.980 | INFO     | __main__:main:96 - Filtered to 168 rows with statistic RMSE
+2025-09-10 06:13:36.980 | INFO     | __main__:main:98 - Comparing v3-k100 to Sage 2.2.1
+2025-09-10 06:13:36.981 | INFO     | __main__:main:111 - Merged to 84 rows
+2025-09-10 06:13:36.982 | INFO     | __main__:main:126 - Found 70 significant changes (29 improved, 41 worsened)
+2025-09-10 06:13:36.982 | INFO     | __main__:main:129 - Improved: b74, b47, b76, b13a, b8a, b75, b9, b62, b62a, b11, b2, b15, b3, b16, b65, b37, b1, b5, b7, b20, b4, b64, b14, b19, b52, b6, All, b21, b59
+2025-09-10 06:13:36.982 | INFO     | __main__:main:130 - Worsened: b12, b85, b84, b17, b13, b68, b69, b70, b87, b8, b18, b39, b44, b72, b61, b27, b51, b48, b56, b10, b41, b45, b43, b29, b86, b67, b73, b26, b28, b34, b57, b31, b24, b35, b60, b42, b63, b57a, b25, b32, b77
+2025-09-10 06:13:36.984 | INFO     | __main__:main:135 - Wrote changes to output/qm/mm-qm-diff/largest-differences-bonds.csv

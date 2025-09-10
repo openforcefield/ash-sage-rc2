@@ -1,0 +1,120 @@
+2025-09-08 16:09:37.286 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/Sage-2.2.1-+-AmberTools.csv
+2025-09-08 16:09:37.288 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/Sage-2.2.1-+-ELF10.csv
+2025-09-08 16:09:37.289 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/Sage-2.2.1-+-AshGC.csv
+2025-09-08 16:09:37.290 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/Sage-2.3.0rc1.csv
+2025-09-08 16:09:37.292 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/v1-k100.csv
+2025-09-08 16:09:37.293 | INFO     | __main__:main:205 - Read 565 rows from output/sfes/freesolv/stats/v3-k100.csv
+2025-09-08 16:09:37.294 | INFO     | __main__:main:210 - Filtered to 2825 rows with given force fields
+2025-09-08 16:09:37.742 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Alcohol.png
+2025-09-08 16:09:38.008 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Aldehyde.png
+2025-09-08 16:09:38.280 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Alkane.png
+2025-09-08 16:09:38.569 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Alkene.png
+2025-09-08 16:09:38.854 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-All.png
+2025-09-08 16:09:39.170 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Amine.png
+2025-09-08 16:09:39.448 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Aqueous.png
+2025-09-08 16:09:39.713 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Aromatic.png
+2025-09-08 16:09:39.986 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Aryl Bromide.png
+2025-09-08 16:09:40.252 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Carbonyl.png
+2025-09-08 16:09:40.590 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Carboxylic Acid Amide.png
+2025-09-08 16:09:40.854 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Carboxylic Acid Derivative.png
+2025-09-08 16:09:41.128 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Carboxylic Acid Ester.png
+2025-09-08 16:09:41.398 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Dialkylether.png
+2025-09-08 16:09:41.681 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Ether.png
+2025-09-08 16:09:42.001 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Halogen Derivative.png
+2025-09-08 16:09:42.284 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Heterocycle.png
+2025-09-08 16:09:42.563 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Hydroxy.png
+2025-09-08 16:09:42.856 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Ketone.png
+2025-09-08 16:09:43.133 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Phenol.png
+2025-09-08 16:09:43.476 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Primary Alcohol.png
+2025-09-08 16:09:43.759 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Primary Aliphatic Amine.png
+2025-09-08 16:09:44.026 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Primary Amine.png
+2025-09-08 16:09:44.307 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Primary Aromatic Amine.png
+2025-09-08 16:09:44.598 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Secondary Aliphatic Amine.png
+2025-09-08 16:09:44.981 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-Secondary Amine.png
+2025-09-08 16:09:45.290 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a1.png
+2025-09-08 16:09:45.581 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a10.png
+2025-09-08 16:09:45.875 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a10a.png
+2025-09-08 16:09:46.215 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a11.png
+2025-09-08 16:09:46.626 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a12.png
+2025-09-08 16:09:46.915 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a15.png
+2025-09-08 16:09:47.193 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a18.png
+2025-09-08 16:09:47.466 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a19.png
+2025-09-08 16:09:47.805 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a2.png
+2025-09-08 16:09:48.086 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a20.png
+2025-09-08 16:09:48.359 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a21.png
+2025-09-08 16:09:48.644 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a22.png
+2025-09-08 16:09:48.953 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a28.png
+2025-09-08 16:09:49.328 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a28a.png
+2025-09-08 16:09:49.626 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-a34.png
+2025-09-08 16:09:49.908 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b1.png
+2025-09-08 16:09:50.189 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b10.png
+2025-09-08 16:09:50.480 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b12.png
+2025-09-08 16:09:50.816 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b14.png
+2025-09-08 16:09:51.087 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b16.png
+2025-09-08 16:09:51.355 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b18.png
+2025-09-08 16:09:51.633 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b2.png
+2025-09-08 16:09:51.912 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b20.png
+2025-09-08 16:09:52.340 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b21.png
+2025-09-08 16:09:52.638 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b3.png
+2025-09-08 16:09:52.950 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b4.png
+2025-09-08 16:09:53.281 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b45.png
+2025-09-08 16:09:53.589 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b5.png
+2025-09-08 16:09:53.981 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b51.png
+2025-09-08 16:09:54.284 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b6.png
+2025-09-08 16:09:54.597 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b7.png
+2025-09-08 16:09:54.882 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b72.png
+2025-09-08 16:09:55.166 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b8.png
+2025-09-08 16:09:55.517 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b84.png
+2025-09-08 16:09:55.799 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b85.png
+2025-09-08 16:09:56.089 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b87.png
+2025-09-08 16:09:56.375 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-b88.png
+2025-09-08 16:09:56.653 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-i1.png
+2025-09-08 16:09:56.983 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-i2.png
+2025-09-08 16:09:57.259 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-i4.png
+2025-09-08 16:09:57.537 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n-tip3p-H.png
+2025-09-08 16:09:57.824 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n-tip3p-O.png
+2025-09-08 16:09:58.099 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n11.png
+2025-09-08 16:09:58.412 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n12.png
+2025-09-08 16:09:58.704 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n13.png
+2025-09-08 16:09:58.985 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n14.png
+2025-09-08 16:09:59.283 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n16.png
+2025-09-08 16:09:59.580 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n17.png
+2025-09-08 16:09:59.920 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n18.png
+2025-09-08 16:10:00.196 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n19.png
+2025-09-08 16:10:00.478 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n2.png
+2025-09-08 16:10:00.785 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n20.png
+2025-09-08 16:10:01.105 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n21.png
+2025-09-08 16:10:01.484 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n25.png
+2025-09-08 16:10:01.764 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n3.png
+2025-09-08 16:10:02.130 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n7.png
+2025-09-08 16:10:02.401 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-n8.png
+2025-09-08 16:10:02.697 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t1.png
+2025-09-08 16:10:03.055 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t106.png
+2025-09-08 16:10:03.353 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t107.png
+2025-09-08 16:10:03.637 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t110.png
+2025-09-08 16:10:03.964 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t115.png
+2025-09-08 16:10:04.275 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t116.png
+2025-09-08 16:10:04.673 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t17.png
+2025-09-08 16:10:04.979 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t17a.png
+2025-09-08 16:10:05.295 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t18.png
+2025-09-08 16:10:05.594 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t19.png
+2025-09-08 16:10:05.887 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t2.png
+2025-09-08 16:10:06.249 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t20.png
+2025-09-08 16:10:06.535 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t3.png
+2025-09-08 16:10:06.818 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t4.png
+2025-09-08 16:10:07.117 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t44.png
+2025-09-08 16:10:07.417 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t45.png
+2025-09-08 16:10:07.790 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t47.png
+2025-09-08 16:10:08.078 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t5.png
+2025-09-08 16:10:08.355 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t51.png
+2025-09-08 16:10:08.629 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t58a.png
+2025-09-08 16:10:08.906 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t74.png
+2025-09-08 16:10:09.226 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t75.png
+2025-09-08 16:10:09.508 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t84.png
+2025-09-08 16:10:09.801 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t85.png
+2025-09-08 16:10:10.086 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t9.png
+2025-09-08 16:10:10.369 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t93.png
+2025-09-08 16:10:10.721 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t94.png
+2025-09-08 16:10:10.996 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t95.png
+2025-09-08 16:10:11.281 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t96.png
+2025-09-08 16:10:11.575 | INFO     | __main__:main:231 - Saved plot to images/compare-refit/freesolv-stats/stats-t97.png
