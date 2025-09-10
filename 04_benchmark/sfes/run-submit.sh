@@ -14,11 +14,11 @@ python submit.py                                                    \
     --network_filename      networks/mnsol-${FFNAME}-network.json   \
     --scope_name_campaign   "${FFNAME_UNDERSCORED}"                 \
     --scopekey_output       scoped-keys/mnsol_${FFNAME}_key.dat     \
-    --scope_name_project    "mnsol" > logs/submit-mnsol-${FFNAME}.log
+    --scope_name_project    "mnsol" > logs/submit/submit-mnsol-${FFNAME}.log
 
 python submit.py                                                    \
     --org_scope "openff" --repeats 3                                \
     --network_filename      networks/fsolv-${FFNAME}-network.json   \
     --scope_name_campaign   "${FFNAME_UNDERSCORED}"                 \
     --scopekey_output       scoped-keys/fsolv_${FFNAME}_key.dat     \
-    --scope_name_project    "freesolv" > logs/submit-freesolv-${FFNAME}.log
+    --scope_name_project    "freesolv" > logs/submit/submit-freesolv-${FFNAME}.log
