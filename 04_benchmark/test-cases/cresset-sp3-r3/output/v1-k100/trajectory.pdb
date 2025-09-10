@@ -1,0 +1,482 @@
+REMARK   1 CREATED WITH OPENMM 8.2, 2025-09-08
+MODEL        1
+HETATM    1  C1x UNK A   1       1.630  -1.465   3.315  1.00  0.00           C  
+HETATM    2  C2x UNK A   1       2.118  -0.212   4.146  1.00  0.00           C  
+HETATM    3  C3x UNK A   1       0.831  -0.248   3.428  1.00  0.00           C  
+HETATM    4  C4x UNK A   1       0.130   0.519   2.567  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -0.557  -0.137   1.359  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -0.302   0.850   0.213  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -0.185   2.212   0.793  1.00  0.00           C  
+HETATM    8  C8x UNK A   1       0.202   2.029   2.260  1.00  0.00           C  
+HETATM    9  H1x UNK A   1       1.161  -2.339   3.769  1.00  0.00           H  
+HETATM   10  H2x UNK A   1       2.086  -1.520   2.325  1.00  0.00           H  
+HETATM   11  H3x UNK A   1       2.027  -0.128   5.230  1.00  0.00           H  
+HETATM   12  H4x UNK A   1       2.938   0.381   3.739  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -0.114  -1.118   1.183  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -1.624  -0.229   1.569  1.00  0.00           H  
+HETATM   15  H7x UNK A   1       0.655   0.544  -0.213  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -1.079   0.768  -0.548  1.00  0.00           H  
+HETATM   17  H9x UNK A   1       0.627   2.793   0.354  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -1.057   2.860   0.694  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -0.488   2.597   2.886  1.00  0.00           H  
+HETATM   20 H12x UNK A   1       1.215   2.375   2.471  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        2
+HETATM    1  C1x UNK A   1       1.202  -1.907   4.815  1.00  0.00           C  
+HETATM    2  C2x UNK A   1       1.831  -0.805   5.818  1.00  0.00           C  
+HETATM    3  C3x UNK A   1       0.464  -0.652   5.181  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -0.106   0.268   4.394  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -0.679  -0.012   3.032  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -0.680   1.325   2.259  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -0.738   2.406   3.310  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -0.008   1.784   4.535  1.00  0.00           C  
+HETATM    9  H1x UNK A   1       0.840  -2.785   5.351  1.00  0.00           H  
+HETATM   10  H2x UNK A   1       1.762  -1.991   3.883  1.00  0.00           H  
+HETATM   11  H3x UNK A   1       1.793  -0.949   6.899  1.00  0.00           H  
+HETATM   12  H4x UNK A   1       2.739  -0.296   5.491  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -0.091  -0.737   2.467  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -1.722  -0.327   3.093  1.00  0.00           H  
+HETATM   15  H7x UNK A   1       0.287   1.378   1.757  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -1.494   1.320   1.532  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -0.131   3.282   3.074  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -1.786   2.637   3.505  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -0.454   2.120   5.472  1.00  0.00           H  
+HETATM   20 H12x UNK A   1       1.061   1.994   4.575  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        3
+HETATM    1  C1x UNK A   1       0.904  -0.435   6.807  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -0.599  -0.468   7.270  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -0.172  -0.748   5.854  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -0.601  -0.018   4.827  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -1.669  -0.612   3.964  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -2.291   0.562   3.258  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -1.781   1.838   3.846  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -0.428   1.412   4.344  1.00  0.00           C  
+HETATM    9  H1x UNK A   1       1.408  -1.297   7.247  1.00  0.00           H  
+HETATM   10  H2x UNK A   1       1.485   0.483   6.912  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -0.874  -1.223   8.009  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -1.231   0.407   7.433  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -1.239  -1.381   3.321  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -2.403  -1.148   4.567  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -2.024   0.414   2.210  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -3.373   0.447   3.331  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -1.718   2.633   3.102  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -2.456   2.172   4.636  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -0.038   2.088   5.106  1.00  0.00           H  
+HETATM   20 H12x UNK A   1       0.275   1.339   3.514  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        4
+HETATM    1  C1x UNK A   1      -0.471   1.526   7.066  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -1.783   1.303   7.732  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -1.386   0.395   6.649  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -1.996   0.382   5.436  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -1.575  -0.555   4.297  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -2.036   0.121   3.073  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -3.117   1.103   3.553  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -2.769   1.569   4.957  1.00  0.00           C  
+HETATM    9  H1x UNK A   1       0.368   1.090   7.610  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -0.305   2.307   6.323  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -1.778   0.743   8.668  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -2.618   1.957   7.478  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -0.490  -0.662   4.270  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -2.067  -1.524   4.390  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -1.194   0.669   2.648  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -2.463  -0.579   2.354  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -3.270   1.889   2.813  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -4.062   0.562   3.621  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -3.692   1.607   5.539  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -2.138   2.458   4.932  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        5
+HETATM    1  C1x UNK A   1      -3.719   3.185   6.527  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -2.535   3.059   7.445  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -2.407   2.721   5.974  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -2.207   1.444   5.603  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -1.039   0.976   4.769  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -1.528  -0.263   4.015  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -2.539  -0.913   4.952  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -2.875   0.147   6.052  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -4.059   4.187   6.265  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.565   2.498   6.584  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -2.069   3.999   7.741  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -2.458   2.281   8.206  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -0.697   1.583   3.930  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -0.208   0.749   5.438  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -1.989   0.126   3.106  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -0.641  -0.845   3.764  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -3.376  -1.410   4.461  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -2.074  -1.783   5.416  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -2.458  -0.102   7.029  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -3.916   0.324   6.326  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        6
+HETATM    1  C1x UNK A   1      -5.265   3.215   5.562  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -4.092   3.521   4.619  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -4.290   2.087   5.131  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -3.465   1.511   5.999  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -2.761   0.135   5.876  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -1.425   0.150   6.670  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -1.330   1.697   6.997  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -2.738   2.202   7.181  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -6.237   3.243   5.068  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -5.090   3.731   6.507  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -4.216   3.637   3.541  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -3.324   4.185   5.018  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -3.380  -0.693   6.224  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -2.599  -0.055   4.814  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -1.677  -0.389   7.585  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -0.580  -0.064   6.016  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -0.642   1.871   7.826  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -0.863   2.250   6.181  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -2.807   3.286   7.078  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -3.068   1.740   8.112  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        7
+HETATM    1  C1x UNK A   1      -5.264   3.226   4.934  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.017   1.958   4.139  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -4.624   2.051   5.632  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -3.348   2.032   5.965  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -2.817   1.415   7.285  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -1.306   1.738   7.415  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -1.213   3.007   6.537  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -2.107   2.783   5.360  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -6.292   3.453   5.220  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.590   4.074   4.800  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -5.927   1.459   3.803  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.266   2.012   3.350  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -3.368   1.778   8.153  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -2.897   0.327   7.277  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -0.928   1.872   8.429  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -0.669   0.952   7.006  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -1.459   3.961   7.007  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -0.184   3.099   6.189  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -1.563   2.078   4.730  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -2.309   3.703   4.808  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        8
+HETATM    1  C1x UNK A   1      -6.270   2.560   4.054  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.534   1.340   4.350  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -5.674   2.343   5.448  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -4.616   2.976   5.926  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -4.806   3.548   7.315  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -3.443   3.772   7.830  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -2.547   4.065   6.624  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -3.232   3.299   5.470  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -7.345   2.421   3.927  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -5.755   3.170   3.310  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -5.964   0.376   4.626  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.597   1.135   3.830  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -5.349   4.476   7.130  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -5.408   2.851   7.899  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -3.361   4.570   8.569  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -3.177   2.828   8.308  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -2.526   5.132   6.396  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -1.534   3.697   6.793  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -2.799   2.330   5.215  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -3.310   3.976   4.619  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL        9
+HETATM    1  C1x UNK A   1      -6.784   1.641   4.415  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.688   0.848   5.088  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -6.590   1.833   5.950  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -6.053   2.918   6.520  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -6.738   3.576   7.688  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -5.885   4.798   8.079  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -4.953   5.130   6.925  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -4.797   3.769   6.153  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -7.687   1.110   4.112  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -6.473   2.535   3.873  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -5.790  -0.238   5.123  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.638   1.101   4.936  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -7.720   3.825   7.285  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -6.839   2.864   8.508  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -6.482   5.690   8.275  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -5.311   4.555   8.974  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -5.393   5.826   6.210  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -4.011   5.563   7.265  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -3.919   3.295   6.596  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -4.676   4.013   5.097  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       10
+HETATM    1  C1x UNK A   1      -6.078   2.241   4.613  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.095   1.760   5.644  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -6.474   2.272   6.147  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -6.673   3.384   6.855  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -7.835   3.482   7.960  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -7.497   4.737   8.826  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -6.653   5.606   7.898  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -5.884   4.669   6.892  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -6.518   1.462   3.989  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -5.739   3.160   4.134  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -4.960   0.678   5.629  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.157   2.251   5.908  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.768   3.599   7.408  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -7.832   2.640   8.653  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -8.357   5.289   9.208  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -6.903   4.479   9.703  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -7.368   6.220   7.348  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -5.934   6.277   8.370  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -4.879   4.396   7.216  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -5.829   5.220   5.952  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       11
+HETATM    1  C1x UNK A   1      -5.026   2.924   5.284  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -4.497   2.442   6.591  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -5.988   2.447   6.406  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -6.825   3.313   7.068  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -8.222   2.914   7.361  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -8.762   4.094   8.209  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -8.012   5.357   7.751  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -6.582   4.759   7.476  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -4.895   2.239   4.445  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.931   4.003   5.157  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -3.973   1.488   6.521  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.058   3.191   7.252  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.861   2.810   6.483  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -8.177   1.975   7.915  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -9.849   4.163   8.154  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -8.558   3.824   9.246  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -8.344   5.734   6.782  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -8.082   6.164   8.482  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -5.913   4.706   8.337  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.046   5.266   6.673  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       12
+HETATM    1  C1x UNK A   1      -4.243   3.608   6.284  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -4.376   3.099   7.707  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -5.491   2.920   6.746  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -6.723   3.551   6.798  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -7.972   2.661   6.785  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.087   3.643   7.352  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -8.559   5.052   7.059  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -7.110   5.002   7.070  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -3.573   3.003   5.672  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.133   4.675   6.087  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -3.770   2.218   7.923  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -4.438   3.763   8.571  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.220   2.373   5.762  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -7.890   1.810   7.463  1.00  0.00           H  
+HETATM   15  H7x UNK A   1     -10.095   3.456   6.980  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -9.094   3.561   8.440  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -8.869   5.437   6.086  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -8.869   5.708   7.873  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -6.674   5.283   8.030  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.713   5.669   6.304  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       13
+HETATM    1  C1x UNK A   1      -4.528   3.148   7.331  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.267   2.652   8.505  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -6.002   2.715   7.199  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -7.018   3.617   6.934  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -8.299   3.277   6.215  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.189   4.500   6.444  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -8.252   5.656   6.772  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -7.064   4.977   7.468  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -3.707   2.537   6.956  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.331   4.220   7.283  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -4.699   1.773   8.813  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -5.613   3.351   9.268  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.106   3.089   5.158  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -8.905   2.474   6.637  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -9.830   4.701   5.585  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -9.883   4.343   7.270  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -7.944   6.152   5.850  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -8.736   6.481   7.297  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -7.417   4.969   8.500  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.187   5.605   7.309  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       14
+HETATM    1  C1x UNK A   1      -5.605   1.643   7.062  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.968   2.033   8.445  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -7.042   2.180   7.299  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -7.530   3.462   7.131  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -9.058   3.784   6.783  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.156   5.323   6.747  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -7.703   5.852   6.583  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -6.796   4.770   7.298  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -5.495   0.585   6.820  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -4.784   2.178   6.583  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -6.229   1.181   9.074  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -5.529   2.905   8.933  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -9.271   3.373   5.795  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -9.756   3.301   7.468  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -9.777   5.716   5.941  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -9.519   5.761   7.678  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -7.350   5.784   5.553  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -7.542   6.864   6.958  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -6.876   5.007   8.360  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -5.786   4.780   6.886  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       15
+HETATM    1  C1x UNK A   1      -6.455   2.670   5.412  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -5.975   2.326   6.836  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -7.381   2.845   6.622  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -7.755   3.998   7.116  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -9.168   4.225   7.608  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.058   5.378   8.587  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -7.965   6.289   8.008  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -6.927   5.315   7.379  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -6.427   1.777   4.786  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -6.001   3.529   4.917  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -5.795   1.275   7.064  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -5.272   2.997   7.331  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -9.776   4.464   6.734  1.00  0.00           H  
+HETATM   14  H6x UNK A   1      -9.544   3.292   8.033  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -9.984   5.954   8.584  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -8.694   5.068   9.568  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -8.313   6.889   7.166  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -7.632   7.050   8.715  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -6.164   5.079   8.122  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.444   5.773   6.515  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       16
+HETATM    1  C1x UNK A   1      -7.640   5.993   4.783  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -7.162   4.590   4.777  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -8.371   4.981   5.655  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -8.297   4.849   6.949  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -9.617   4.542   7.730  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.138   4.126   9.183  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -7.731   4.753   9.351  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -7.108   4.606   7.908  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -8.384   6.384   4.088  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -7.067   6.753   5.316  1.00  0.00           H  
+HETATM   11  H3x UNK A   1      -7.331   4.016   3.865  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -6.166   4.555   5.222  1.00  0.00           H  
+HETATM   13  H5x UNK A   1     -10.140   5.493   7.836  1.00  0.00           H  
+HETATM   14  H6x UNK A   1     -10.179   3.745   7.240  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -9.909   4.564   9.819  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -9.078   3.037   9.201  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -7.773   5.804   9.640  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -7.111   4.360  10.158  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -6.712   3.598   7.783  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.327   5.351   7.747  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       17
+HETATM    1  C1x UNK A   1      -8.773   8.026   6.794  1.00  0.00           C  
+HETATM    2  C2x UNK A   1      -9.560   7.550   5.638  1.00  0.00           C  
+HETATM    3  C3x UNK A   1      -9.539   6.657   6.789  1.00  0.00           C  
+HETATM    4  C4x UNK A   1      -8.801   5.558   6.839  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -9.063   4.407   7.796  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -8.214   3.153   7.444  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -7.056   3.804   6.636  1.00  0.00           C  
+HETATM    8  C8x UNK A   1      -7.599   5.114   5.942  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -9.153   8.764   7.502  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -7.688   8.129   6.750  1.00  0.00           H  
+HETATM   11  H3x UNK A   1     -10.544   8.013   5.545  1.00  0.00           H  
+HETATM   12  H4x UNK A   1      -9.147   7.143   4.714  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.753   4.734   8.789  1.00  0.00           H  
+HETATM   14  H6x UNK A   1     -10.141   4.242   7.750  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -7.840   2.567   8.285  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -8.816   2.476   6.836  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -6.245   4.061   7.318  1.00  0.00           H  
+HETATM   18 H10x UNK A   1      -6.608   3.157   5.880  1.00  0.00           H  
+HETATM   19 H11x UNK A   1      -7.991   4.837   4.963  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -6.808   5.863   5.882  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       18
+HETATM    1  C1x UNK A   1      -9.415   7.059   7.660  1.00  0.00           C  
+HETATM    2  C2x UNK A   1     -10.949   7.049   7.593  1.00  0.00           C  
+HETATM    3  C3x UNK A   1     -10.163   5.703   7.448  1.00  0.00           C  
+HETATM    4  C4x UNK A   1     -10.038   5.068   6.267  1.00  0.00           C  
+HETATM    5  C5x UNK A   1      -9.656   3.637   6.152  1.00  0.00           C  
+HETATM    6  C6x UNK A   1      -9.127   3.385   4.771  1.00  0.00           C  
+HETATM    7  C7x UNK A   1      -9.737   4.464   3.897  1.00  0.00           C  
+HETATM    8  C8x UNK A   1     -10.118   5.653   4.783  1.00  0.00           C  
+HETATM    9  H1x UNK A   1      -8.829   7.126   8.577  1.00  0.00           H  
+HETATM   10  H2x UNK A   1      -8.925   7.441   6.763  1.00  0.00           H  
+HETATM   11  H3x UNK A   1     -11.381   7.029   8.594  1.00  0.00           H  
+HETATM   12  H4x UNK A   1     -11.424   7.266   6.635  1.00  0.00           H  
+HETATM   13  H5x UNK A   1      -8.995   3.361   6.974  1.00  0.00           H  
+HETATM   14  H6x UNK A   1     -10.535   3.001   6.260  1.00  0.00           H  
+HETATM   15  H7x UNK A   1      -8.038   3.437   4.755  1.00  0.00           H  
+HETATM   16  H8x UNK A   1      -9.323   2.354   4.473  1.00  0.00           H  
+HETATM   17  H9x UNK A   1      -9.042   4.710   3.093  1.00  0.00           H  
+HETATM   18 H10x UNK A   1     -10.683   4.170   3.441  1.00  0.00           H  
+HETATM   19 H11x UNK A   1     -11.129   6.038   4.643  1.00  0.00           H  
+HETATM   20 H12x UNK A   1      -9.365   6.422   4.608  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       19
+HETATM    1  C1x UNK A   1     -11.490   6.766   7.508  1.00  0.00           C  
+HETATM    2  C2x UNK A   1     -12.123   5.495   8.082  1.00  0.00           C  
+HETATM    3  C3x UNK A   1     -11.136   5.381   6.991  1.00  0.00           C  
+HETATM    4  C4x UNK A   1     -11.405   5.015   5.798  1.00  0.00           C  
+HETATM    5  C5x UNK A   1     -10.785   3.863   5.030  1.00  0.00           C  
+HETATM    6  C6x UNK A   1     -11.993   3.213   4.215  1.00  0.00           C  
+HETATM    7  C7x UNK A   1     -12.958   4.305   3.850  1.00  0.00           C  
+HETATM    8  C8x UNK A   1     -12.572   5.438   4.890  1.00  0.00           C  
+HETATM    9  H1x UNK A   1     -10.761   7.428   7.978  1.00  0.00           H  
+HETATM   10  H2x UNK A   1     -12.066   7.363   6.800  1.00  0.00           H  
+HETATM   11  H3x UNK A   1     -11.864   5.069   9.052  1.00  0.00           H  
+HETATM   12  H4x UNK A   1     -13.186   5.395   7.859  1.00  0.00           H  
+HETATM   13  H5x UNK A   1     -10.192   4.417   4.301  1.00  0.00           H  
+HETATM   14  H6x UNK A   1     -10.246   3.148   5.653  1.00  0.00           H  
+HETATM   15  H7x UNK A   1     -11.620   2.695   3.331  1.00  0.00           H  
+HETATM   16  H8x UNK A   1     -12.439   2.520   4.930  1.00  0.00           H  
+HETATM   17  H9x UNK A   1     -12.984   4.558   2.789  1.00  0.00           H  
+HETATM   18 H10x UNK A   1     -13.979   3.954   4.010  1.00  0.00           H  
+HETATM   19 H11x UNK A   1     -13.410   5.640   5.559  1.00  0.00           H  
+HETATM   20 H12x UNK A   1     -12.004   6.177   4.323  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+MODEL       20
+HETATM    1  C1x UNK A   1     -12.794   5.886   8.122  1.00  0.00           C  
+HETATM    2  C2x UNK A   1     -11.321   5.681   7.933  1.00  0.00           C  
+HETATM    3  C3x UNK A   1     -12.075   6.407   6.830  1.00  0.00           C  
+HETATM    4  C4x UNK A   1     -12.327   5.849   5.616  1.00  0.00           C  
+HETATM    5  C5x UNK A   1     -12.845   6.569   4.282  1.00  0.00           C  
+HETATM    6  C6x UNK A   1     -13.591   5.543   3.364  1.00  0.00           C  
+HETATM    7  C7x UNK A   1     -13.590   4.299   4.281  1.00  0.00           C  
+HETATM    8  C8x UNK A   1     -12.364   4.336   5.187  1.00  0.00           C  
+HETATM    9  H1x UNK A   1     -13.094   6.683   8.804  1.00  0.00           H  
+HETATM   10  H2x UNK A   1     -13.331   4.939   8.063  1.00  0.00           H  
+HETATM   11  H3x UNK A   1     -10.542   6.315   8.359  1.00  0.00           H  
+HETATM   12  H4x UNK A   1     -10.855   4.715   7.735  1.00  0.00           H  
+HETATM   13  H5x UNK A   1     -13.531   7.375   4.545  1.00  0.00           H  
+HETATM   14  H6x UNK A   1     -11.983   7.011   3.780  1.00  0.00           H  
+HETATM   15  H7x UNK A   1     -14.513   5.912   2.912  1.00  0.00           H  
+HETATM   16  H8x UNK A   1     -13.001   5.364   2.464  1.00  0.00           H  
+HETATM   17  H9x UNK A   1     -14.563   4.312   4.774  1.00  0.00           H  
+HETATM   18 H10x UNK A   1     -13.677   3.400   3.669  1.00  0.00           H  
+HETATM   19 H11x UNK A   1     -11.545   4.112   4.502  1.00  0.00           H  
+HETATM   20 H12x UNK A   1     -12.429   3.667   6.046  1.00  0.00           H  
+TER      21      UNK A   1
+ENDMDL
+CONECT    1    3    2    9   10
+CONECT    2    1    3   11   12
+CONECT    3    1    2    4
+CONECT    4    3    8    5
+CONECT    5    4    6   13   14
+CONECT    6    5    7   15   16
+CONECT    7    6    8   17   18
+CONECT    8    4    7   19   20
+CONECT    9    1
+CONECT   10    1
+CONECT   11    2
+CONECT   12    2
+CONECT   13    5
+CONECT   14    5
+CONECT   15    6
+CONECT   16    6
+CONECT   17    7
+CONECT   18    7
+CONECT   19    8
+CONECT   20    8
+END

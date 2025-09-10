@@ -1,0 +1,7 @@
+2025-09-08 16:01:35.460 | INFO     | __main__:main:29 - Using force field ../../forcefields/fb-fit-v3-single-mean-k100.offxml
+2025-09-08 16:01:35.473 | INFO     | __main__:main:34 - O1-S2-O3  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
+2025-09-08 16:01:35.473 | INFO     | __main__:main:34 - O1-S2-O4  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
+2025-09-08 16:01:35.474 | INFO     | __main__:main:34 - O1-S2-O5  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
+2025-09-08 16:01:35.474 | INFO     | __main__:main:34 - O3-S2-O4  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
+2025-09-08 16:01:35.474 | INFO     | __main__:main:34 - O3-S2-O5  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
+2025-09-08 16:01:35.474 | INFO     | __main__:main:34 - O4-S2-O5  |  a42 -- 114.1391334584 degree, 252.3833136503 kilocalorie_per_mole / radian ** 2
