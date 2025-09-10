@@ -30,14 +30,14 @@ logger.add(sys.stdout)
     "--input-file",
     "-i",
     type=str,
-    default="msm-ff/ff-v4.json",
+    default="msm-ff/ff-v3.json",
     help="Input force field JSON file.",
 )
 @click.option(
     "--output-directory",
     "-o",
     type=str,
-    default="images/distributions/ff-v4",
+    default="images/distributions/ff-v3",
     help="Output directory to write plots.",
 )
 def main(
