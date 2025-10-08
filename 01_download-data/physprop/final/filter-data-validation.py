@@ -180,15 +180,17 @@ def save_dataset(dataset, output_file: pathlib.Path):
 @click.option(
     "--training-file",
     "-t",
-    default="output/training-set.json",
+    "training_files",
+    multiple=True,
+    default=["output/training-set.json"],
     help=(
-        "The JSON file containing the training set. "
+        "The JSON file/s containing the training set. "
         "This is used to filter out properties that are already in the training set."
     ),
 )
 def main(
     input_file: str = "../intermediate/output/renamed-filtered.csv",
-    training_file: str = "output/training-set.json",
+    training_files: list[str] = ["output/training-set.json"],
     exclude_file: str = None,
     output_file: str = "output/validation-set.csv",
     n_processes: int = 1,
@@ -203,7 +205,13 @@ def main(
         df = pd.read_csv(input_file)
         df["Id"] = df["Id"].astype(str)
         ds = PhysicalPropertyDataSet.from_pandas(df)
-    training_set = PhysicalPropertyDataSet.from_json(pathlib.Path(training_file))
+
+    training_set = PhysicalPropertyDataSet()
+    for training_file in training_files:
+        tset = PhysicalPropertyDataSet.from_json(pathlib.Path(training_file))
+        training_set.add_properties(*tset.properties)
+        logger.info(f"Loaded {len(tset)} properties from {training_file}")
+    logger.info(f"Loaded a total of {len(training_set)} training properties")
 
     # filter out training properties
     training_ids = [x.id for x in training_set.properties]
