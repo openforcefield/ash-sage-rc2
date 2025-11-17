@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+#SBATCH -J check-properties
+#SBATCH -p cpu
+#SBATCH -t 01:00:00
+#SBATCH --mem=4gb
+#SBATCH --output slurm-%x.%A.out
+
+. ~/.bashrc
+
+# Use the right conda environment
+conda activate evaluator-050
+
+TIER="validation"
+#TIER="training"
+
+
+DATASET="../../01_download-data/physprop/final/output/${TIER}-set.json"
+
+echo $TIER
+
+python check-properties-to-run.py      \
+    -i $DATASET                 \
+    -d $TIER                    \
+    -o output/$TIER

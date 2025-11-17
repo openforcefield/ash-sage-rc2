@@ -173,10 +173,9 @@ def main(
     logger.info(f"# exceptions: {len(results.exceptions)}")
     #pickle_file.parent.mkdir(exist_ok=True, parents=True)
 
-    # below is only necessary for debugging -- so commented out for now.
-    # with open(pickle_file, "wb") as f:
-    #     pickle.dump(results, f)
-    # logger.info(f"Results dumped to {pickle_file}")
+    with open(pickle_file, "wb") as f:
+        pickle.dump(results, f)
+    logger.info(f"Results dumped to {pickle_file}")
 
     results.json(results_file, format=True)
     logger.info(f"Results saved to {results_file}")
